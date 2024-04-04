@@ -1,0 +1,37 @@
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: #F7F9FF; /* Background color outside container */
+}
+.VerifyEmailContainer {
+    background-color: white;
+  padding: 20px; /* Adjust padding as needed */
+  height: 70vh;
+  width: 45%;
+  color: #0B1C32;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 25px 0;
+  margin-left: 37px;
+  margin-right: 24px;
+}
+h1 {
+    font-size: 30px;
+}
+
+::placeholder {
+    padding: 0px 10px;
+    color: #CAC4CE;
+    font-size: 16px;
+    text-align: center;
+   }
+
+button {
+    border-radius: 2px;
+}
