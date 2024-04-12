@@ -1,0 +1,101 @@
+.background {
+    background-color: #ce2323;
+    padding: 80px 20px;
+    
+}
+.logo_container {
+    background-color: blue;
+}
+.signup_image {
+    display: flex;
+    flex-direction: row;
+    /* gap: 10px; */
+    background-color: #fff;
+    justify-content: space-around;
+    
+}
+.headerpassage {
+    position: relative;
+    bottom: 28px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+   
+}
+.forms, .nameforms {
+    display: flex;
+    gap: 10px;
+    
+    
+}
+.nameforms input {
+    width: 250px;
+    height: 48px;
+    border: 1px solid #000;
+    background-color: transparent;
+}
+.email_company input {
+    width: 520px;
+    height: 48px;
+    border: 1px solid #000;
+    background-color: transparent;
+}
+
+
+.checkbox {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    right: 10px;
+    text-wrap: nowrap;
+    background-color: red;
+    
+}
+.checkbox p{
+    background-color: blue;
+}
+.alternativeLogin {
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+.signupicons{
+font-family: Nunito;
+font-size: 12px;
+font-weight: 400;
+line-height: 14px;
+letter-spacing: 0.008em;
+text-align: left;
+}
+.socialIcons {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+   
+}
+.google, .facebook, .twitter{
+    border: 1px solid rgba(0, 0, 0, 1);
+    padding: 20px;
+    border-radius: 4px;
+}
+.sideimage {
+    width: 500px;
+    height: 647.65px;
+    gap: 0px;
+    opacity: 0px;
+    background-color: black;
+}
+::placeholder {
+    padding-left: 10px;
+    font-size: 16px;
+   color: rgba(71, 71, 71, 0.4);
+   
+}

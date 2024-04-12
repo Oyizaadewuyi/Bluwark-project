@@ -1,4 +1,4 @@
-import clip from  "../Assets/images/Clip path group.svg"
+import clip from  "../../components/Assets/images/Clip path group.svg"
 import '../AccountConfirmation/AccountConfirm.css'
 
 

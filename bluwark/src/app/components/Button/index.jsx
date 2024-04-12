@@ -13,7 +13,7 @@ function Button({children, ...props}) {
     return(
         props.onClick ? <button {...props} onClick={props.onClick} className={`${className} ${props.className}`}>{children}</button>
             :
-        <a href="#" className={`${className} ${props.className}`}>{children}</a>
+        <a href="#/" className={`${className} ${props.className}`}>{children}</a>
     )
 }
 

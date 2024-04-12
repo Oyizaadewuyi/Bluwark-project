@@ -1,8 +1,12 @@
 import React from "react";
-import SignIn from "./app/components/SignInPage/SignIn";
+import SignIn from "./app/pages/SignInPage/SignIn";
 import { BrowserRouter, Routes , Route} from 'react-router-dom'
-import VerifyEmail from "./app/components/VerifyEmailPage/VerifyEmail";
-import AccountConfirm from "./app/components/AccountConfirmation/AccountConfirm";
+import VerifyEmail from "./app/pages/VerifyEmailPage/VerifyEmail";
+import AccountConfirm from "./app/pages/AccountConfirmation/AccountConfirm";
+import{ SignUp} from "./app/pages/SignUpPage/index";
+import { ForgotPassword } from "./app/pages/ForgotPassword";
+
+
 
 
 function App() {
@@ -14,6 +18,11 @@ function App() {
         <Route path="signin" element={<SignIn />} />
         <Route path="verifyemail" element={<VerifyEmail />} />
         <Route path="accountconfirm" element={<AccountConfirm />} />
+        <Route path="signup" element={<SignUp/>} />
+        <Route path="ForgotPassword" element={<ForgotPassword/>} />
+
+      
+        
         
             </Routes>
       </BrowserRouter>

@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import style from "../VerifyEmailPage/style.module.css"
-import CustomButton from '../Button'
+import Button from '../../components/Button/index'
+
 
 
 const VerifyEmail = () => {
-    const [action,setName] = useState("Verify your E-mail Address");
+    const [action, setName] = useState("Verify your E-mail Address");
  
   return (
     <div className={style.background}>
@@ -31,9 +32,9 @@ const VerifyEmail = () => {
             </label>
             </form>
             <br/>
-            <CustomButton className={action==="Submit"?"submit gray":"submit"} onClick={() => {}}>
+            <Button className={action==="Submit"?"submit gray":"submit"} onClick={() => {}}>
             Submit
-          </CustomButton>
+          </Button>
           
 
           </div>
@@ -45,3 +46,9 @@ const VerifyEmail = () => {
 }
 
 export default VerifyEmail
+
+
+
+
+
+
