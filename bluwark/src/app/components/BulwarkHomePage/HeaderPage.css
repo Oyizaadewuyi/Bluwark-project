@@ -1,0 +1,53 @@
+/* .header {
+    height: 15vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+/* ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ul li a {
+    align-items: center;
+} */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/* img {
+    width: 150px;
+    height: 150px;
+} */
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #777777;
+    font-weight: 500;
+    gap :10px;
+}
+
+.active {
+    border: 1px solid #777777;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-left: -10%;
+    }
+.Get {
+    
+}
