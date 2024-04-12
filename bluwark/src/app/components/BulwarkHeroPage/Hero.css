@@ -1,0 +1,38 @@
+.hero {
+     padding: 5em;
+    color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.2em;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    
+  }
+  p {
+    font-size: 20px;
+    margin-top: -2%;
+  }
+
+ 
+  button {
+    height: 5vh;
+    padding: 0px 25px;
+    background-color: #616161;
+    border: 1px solid #616161;
+    border-radius: 20px;
+    color: white;
+    text-align: center
+
+  }
+
+  img {
+    margin-top: -1.5%;
+  }
+  span {
+    text-decoration: underline;
+  }
