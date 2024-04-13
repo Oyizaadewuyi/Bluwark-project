@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+    padding: 10px 10%;
 
 }
 
@@ -42,10 +43,9 @@
 
     }  
 
-    .image{  
-        margin-left: 100%;
-        margin-top: -110%;
-        width: 40px;
-        height: 40px;
-        padding: 0px 20%;
-}
+    .picture{  
+        width: 400px;
+        height: 400px;
+        margin-top: -200%;
+        margin-left: 150%;
+    }

@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './style.module.css'
 import contactimg from '../Assets/images/contact-image.png'
-import { useRef } from 'react'
+import { useRef}  from 'react'
 import emailjs from '@emailjs/browser';
 
 export const ContactForm = () => {
@@ -75,12 +75,12 @@ export const ContactForm = () => {
           
               </form>
               </div>
-              <div className={styles.image}>
-                    <img src={contactimg} alt="" />
+                    <img className={styles.picture}src={contactimg} alt="" />
+                    
                 </div>
               
               
-              </div>
+              
                
            
         
