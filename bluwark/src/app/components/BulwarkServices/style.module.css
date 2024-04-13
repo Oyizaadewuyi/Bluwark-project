@@ -1,0 +1,77 @@
+.Services {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.Services .title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.Services .list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+
+.Services .list .item {
+    width: 285px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.cardContainer {
+    width: 200px; /* Set width */
+    height: 300px; /* Set height */
+    border: 1px solid #ccc; /* Add border */
+    background-color: #f0f0f0; /* Set background color */
+    padding: 20px; /* Add padding */
+    margin-right: 20px; /* Add right margin */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+.Services .list .item img {
+    width: 240px;
+    height: 200px;
+    margin-top: -30%;
+    }
+
+
+.Services .list .item .title {
+    font-size: 14px;
+    font-weight: 700;
+    padding: 15px;
+    margin-top: -2%;
+}
+
+.Services .list .item .description {
+    font-size: 12px;
+    margin-top: -17%;
+    
+}
+
+.learnMoreButton {
+    border: none; /* Remove button border */
+    background: none; /* Remove button background */
+    padding: 0; /* Remove button padding */
+        text-decoration: underline; /* Add underline to text */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    color: #000000;
+  
+    }
+
