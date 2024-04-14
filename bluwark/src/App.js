@@ -14,36 +14,6 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // import IsProtectedRoute from './IsProtectedRoute';
 import { BulwarkLanding } from './app/pages/BulwarkLanding';
 
-// const App = () => {
-
-// const router = createBrowserRouter([
-//   {
-//     path: '',
-//     element: (<IsProtectedRoute>
-//      <BulwarkLanding/>
-//          </IsProtectedRoute>),
-//   },
-
-// ])
-
-
-// export function App() {
-
-// }
-
-//   return (
-//     <><HeaderPage />
-//     <Hero />
-//     <Services/>
-//     <Protection/>
-//     <Testimonials/>
-//     <ContactForm/>
-//     <Footer/>
-//       </>
-//    )
-// }
-
-//  export default App
 
  function App() {
   return (
