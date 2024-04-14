@@ -1,0 +1,30 @@
+
+/* Style for the container */
+.input_container {
+    margin-bottom: 20px;
+}
+  
+  /* Style for the label */
+  .input_label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    background-color: rgb(250, 245, 245);
+  }
+  
+  
+  /* Style for the input field */
+  .input_field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #f5ecec;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Style for the input field when focused */
+  .input_field:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  }

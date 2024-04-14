@@ -1,0 +1,27 @@
+.background {
+   
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+
+     /* Background color outside container */
+}
+.signin_image {
+    display: flex;
+    gap: 30px;
+    
+    padding: 20px;
+}
+.forgot_field {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:start;
+    
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 95%;
+}
