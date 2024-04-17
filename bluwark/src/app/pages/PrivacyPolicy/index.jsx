@@ -20,9 +20,11 @@ export const PrivacyPolicy = () => {
           </h2>
         </div>
         <div className={style.policy}>
-         <PolicyAgreement  />
+          <PolicyAgreement />
         </div>
-        <Footer/>
+        <div>
+          <Footer />
+        </div>
       </section>
     </main>
   );
