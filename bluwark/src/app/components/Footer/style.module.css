@@ -1,0 +1,109 @@
+.footer_container{
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 40px 10%;
+    justify-content: space-between;
+    /* height: 40vh; */
+    /* gap: 30px; */
+   }
+
+
+   .footerMenu {
+    display: flex;
+    align-items: start;
+    /* justify-content: center; */
+    flex-direction: column;
+    text-align: start; 
+      
+    margin-bottom: 10px;
+    /* font-size: 18px;
+    font-weight: 700;
+    color: red; */
+
+   
+}
+
+.footerMenu p {
+    
+    font-size: 16px;
+    text-align: start;
+    margin-right: 10%;
+}
+
+.footerMenu h4 {
+   font-size: 18px;
+   font-weight: 500; 
+   color: #E0E0FD;
+  
+   }
+
+
+.para {
+    color:white;
+    text-align: start;
+    margin-top: 5%;
+    font-size: 14px;
+    margin-right: 20px;
+}
+.footheading {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.footerForm input {
+    width: 250px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+
+.footerForm ::placeholder{
+    color: white;
+    font-size: 10px;
+}
+
+ .footerbutton{
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 25px;
+    width: 90px;
+    height: 30px;
+    font-size: 10px;
+    margin-top: -10px;
+    text-align: center;
+    /* margin-right: 10%; */
+} 
+
+hr {
+    margin-top: 10%;
+    width: 100%;
+}
+
+.footerbottom {
+     display: flex;
+    justify-content: center;
+    align-items: end; 
+}
+
+.footerIcons {
+   
+}
+
+
+/* .menutitle{
+     display: flex;
+    align-items: start;
+     gap: 10px;
+     margin-right: 10%;
+
+}
+
+.menupara {
+    font-size: 12px;
+    color: red;
+    text-align: start;
+
+    
+   }  */

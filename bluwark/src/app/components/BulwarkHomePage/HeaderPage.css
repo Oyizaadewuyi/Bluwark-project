@@ -14,7 +14,9 @@
 ul li a {
     align-items: center;
 } */
-
+body {
+    background-color: #E0E0FD;
+}
 nav {
     display: flex;
     align-items: center;
