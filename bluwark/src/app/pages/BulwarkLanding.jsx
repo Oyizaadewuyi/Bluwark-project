@@ -4,7 +4,7 @@ import Hero from "../components/BulwarkHeroPage/Hero";
 import Services from "../components/BulwarkServices/Services";
 import { Protection } from "../components/BulwarkProtection/Protection";
 import { ContactForm } from "../components/BulwarkContactForm/ContactForm";
-import { Footer } from "../components/Footer/Footer";
+import { CustomFooter, Footer } from "../components/Footer/Footer";
 
 
 
@@ -16,7 +16,7 @@ export function BulwarkLanding() {
         <Services/>
         <Protection/>
         <ContactForm/>
-        <Footer/>
+        <CustomFooter/>
 </div>
     );
   }

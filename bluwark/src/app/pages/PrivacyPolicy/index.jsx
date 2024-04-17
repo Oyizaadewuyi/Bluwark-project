@@ -2,7 +2,7 @@ import style from "./style.module.css";
 import HeaderPage from "../../components/BulwarkHomePage/HeaderPage";
 import privacyPolicyImage from "../../components/Assets/images/Privacy_Policy.png";
 import { PolicyAgreement } from "../../components/policyAgreement/data";
-import { Footer } from "../../components/Footer/Footer";
+import { CustomFooter, Footer } from "../../components/Footer/Footer";
 
 export const PrivacyPolicy = () => {
   return (
@@ -23,7 +23,7 @@ export const PrivacyPolicy = () => {
           <PolicyAgreement />
         </div>
         <div>
-          <Footer />
+          <CustomFooter />
         </div>
       </section>
     </main>
