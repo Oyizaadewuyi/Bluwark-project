@@ -76,7 +76,7 @@ const SignIn = () => {
               className={action === "Sign in" ? "submit gray" : "submit"}
               onClick={() => {}}
             >
-              SignUp
+              Sign In
             </CustomButton>
           </Link>
 
@@ -91,7 +91,7 @@ const SignIn = () => {
                     href="#/"
                     className={action === "Sign Up" ? "submit gray" : "submit"}
                   >
-                    Login
+                    Sign Up
                   </a>
                 </Link>
               </span>
@@ -101,7 +101,7 @@ const SignIn = () => {
             <br />
 
             <div className={style.socialIcons}>
-              <FcGoogle className={style.google} />
+              <a href="https://accounts.google.com/"><FcGoogle className={style.google} /></a>
               <FaXTwitter className={style.twitter} />
               <FaFacebookF className={style.facebook} />
             </div>

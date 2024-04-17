@@ -1,7 +1,7 @@
 import React from "react"
 import styles from './style.module.css'
 import Frame1 from '../Assets/images/Frame1.png'
- import Frame2 from '../Assets/images/Frame2.png'
+import Frame2 from '../Assets/images/Frame2.png'
 import Frame3 from '../Assets/images/Frame3.png'
 
 
