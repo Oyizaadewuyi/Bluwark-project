@@ -1,22 +1,31 @@
 .container {
-    display: flex;
-    justify-content: center; /* Distribute items evenly with space between them */
-    align-items: flex-start;
-    padding: 200px; 
+height: 60vh;
+    background-color: #F6F6F6;
+      display: flex;
+    justify-content: center; 
+       align-items: center;  
+      border: 1px solid #0D265B;
+      border-radius: 15px;
+      /* padding: 20px 10%;  */
+      margin-top: 10%;
+      
 }  
+
+
 
 .testimonial {
     display: flex;
-    flex-direction: column;
-    align-items: center; /* Align items at the start of the cross axis (vertically) */
-     background-color: #777777; /*Add background color*/
-     padding: 10px;
+   flex-direction: column;
+    align-items: center; 
+     background-color: white;
      width: 200px; 
      text-align: center;
-    margin-right: 30px
+    /* margin-top: 10%; */
+    padding: 10px 5%;
+    margin-right: 10px;
     
 
- }  
+ }   
 .Quote {
     width: 50px;
     height: 50px;
@@ -25,10 +34,11 @@
 
  .testimonial p{
     display: flex;
-    color: white;
+    color: black;
     font-size: 12px;
     } 
  img.lora {
     margin-top: -15%;
     color: white;
 }   
+

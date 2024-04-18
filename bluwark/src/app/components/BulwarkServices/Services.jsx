@@ -1,37 +1,37 @@
 import React from "react"
 import styles from './style.module.css'
-import Frame1 from '../Assets/images/Frame1.png'
- import Frame2 from '../Assets/images/Frame2.png'
-import Frame3 from '../Assets/images/Frame3.png'
+import FrameA from '../Assets/images/FrameA.png'
+ import FrameB from '../Assets/images/FrameB.png'
+import FrameC from '../Assets/images/FrameC.png'
 
 
 import Button from "../Button"
 // import Image1 from '../Assets/images/Image1'
-// import Frame3 from '../Assets/images/Frame3'
+import FrameD from '../Assets/images/FrameD.png'
 
 
 export const Services = () => {
     const Services =[{
-       image: Frame1,
+       image: FrameA,
        title: "Personal Data Cleanup",
        description: "Alerts you when your personal info is found online and helps you remove it, so you can get your data back from sites that sell it.",
       //  learnMoreLink: "/personal-data-cleanup-details", // Add a learnMoreLink for each service
 
       },
     {
-         image: Frame2,
+         image: FrameB,
          title: "Bulwark Scam Protection",
          description: "With advanced AI, Bulwark detects fraudulent texts and blocks risky websites to prevent scam link risks..",
   },
 
   {
-    image: Frame3,
+    image: FrameC,
     title: "Identity Monitoring",
     description: "Constant 24/7 surveillance notifies you of any personal data sightings on the dark web, safeguarding against identity theft.",
  },
 
  {
-  image: Frame3,
+  image: FrameD,
   title: "Social Privacy Manager",
   description: "Automatically tweak 100+ social media privacy settings, ensuring your info is visible only to chosen contacts..",
 },

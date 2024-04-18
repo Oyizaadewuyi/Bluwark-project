@@ -9,7 +9,8 @@ import ann from '../Assets/images/Ann.png'
 export const Testimonials = () => {
     return (
         <section className={styles.container}>
-            <div className={styles.testimonial}>
+            
+                <div className={styles.testimonial}>
             <img src={quote} alt="" className={styles.Quote}/>
                 
             <p>I have used Bulwark for a few<br/>years. The protection is the<br/> best for the money. I also cover<br/>my phones with Bulwark and I<br/>haven’t had any problems yet.</p>
@@ -17,8 +18,7 @@ export const Testimonials = () => {
             <br/>
             <img src={lora} alt="lora" className={styles.lora}/>
            
-                
-            </div>
+             </div>
             
             <div className={styles.testimonial}>
                 <img src={quote} alt="" className={styles.Quote}/>
@@ -36,7 +36,11 @@ export const Testimonials = () => {
                 <img src={ann} alt="ann" />
             
             </div> 
-        </section> 
+
+
+           </section> 
+
+        
     );
 };
 

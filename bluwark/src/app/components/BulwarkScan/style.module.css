@@ -1,0 +1,47 @@
+.scan {
+    background-color: white;
+    border: 1px solid #0D265B;
+    border-radius: 15px;
+    margin-top: 10%;
+}
+
+.emailform {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px 15%;
+  } 
+  
+  .emailform input {
+  margin-right: 10px;
+  width: 350px;
+
+  }
+h5 {
+    text-align: center;
+    font-size: 26px;
+
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+}
+
+::placeholder {
+    text-align: start;
+    padding: 10px 5%;
+    margin-right: 5%;
+}
+
+.scanbtn {
+    padding: 2px 5%;
+   align-items: center;
+   background-color: #0050BE;
+   border: 1px solid #0050BE;
+   border-radius: 25px;
+   height: 50px;
+   color: white;
+   font-size: 16px;
+   margin-right: 20%;
+    }
