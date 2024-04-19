@@ -9,6 +9,7 @@ const AccountConfirm = () => {
       
       <img src={clip} alt="" />
       <h1>Your BULWARK<br/>account is ready</h1>
+      <a href="/#"><h4>Contine</h4></a>
     </div>
 
 

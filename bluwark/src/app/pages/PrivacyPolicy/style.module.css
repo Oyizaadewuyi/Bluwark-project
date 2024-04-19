@@ -1,0 +1,50 @@
+.container{
+    background-color: #E0E0FD;
+    padding:0 25px;
+    position: relative;
+
+}
+
+.privacyPolicyImage, .privacycommitment{
+    position: absolute;
+}
+.privacyPolicyImage {
+    width: 1300px;
+    height: 732px;
+    padding-top: 50px;
+   
+   
+}
+.privacycommitment{
+    width: 1200px;
+    height: 361px;
+    background-color: #E0E0FD;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    top: 850px;
+    left: 5%;
+    
+
+}
+.commitmenttext{
+    display: flex;
+    color: #000;
+    font-size: 65px;
+    font-weight: bold;
+    /* font-family: ; */
+}
+.policycontainer {
+    background-color: red;
+    width: 1429px;
+    height: 4500px;
+}
+.policy {
+    position: relative;
+    top: 830px;
+}
+.Footer {
+    background-color: red;
+}

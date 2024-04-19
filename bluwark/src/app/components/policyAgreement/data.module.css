@@ -1,0 +1,19 @@
+.policy_Agreement {
+    background-color: #ffff;
+    padding: 250px 25px;
+    width: 1400px;
+    
+    
+}
+span {
+    text-decoration: none;
+    color: #0050BE;
+}
+h5 {
+    margin: 0;
+}
+ol, p {
+    color: #1b1b1b;;
+    font-size: 32px;
+    letter-spacing: 0.5%;
+}
