@@ -24,40 +24,13 @@ import { PrivacyPolicy } from "./app/pages/PrivacyPolicy";
 // import IsProtectedRoute from './IsProtectedRoute';
 
 
-// const App = () => {
-
-// const router = createBrowserRouter([
-//   {
-//     path: '',
-//     element: (<IsProtectedRoute>
-//      <BulwarkLanding/>
-//          </IsProtectedRoute>),
-//   },
-
-// ])
-
-
-// export function App() {
-
-// }
-
-//   return (
-//     <><HeaderPage />
-//     <Hero />
-//     <Services/>
-//     <Protection/>
-//     <Testimonials/>
-//     <ContactForm/>
-//     <Footer/>
-//       </>
-//    )
-// }
-
-//  export default App
 
  function App() {
   return (
+
     <div>
+
+
     <BrowserRouter>
       <Routes>
  
@@ -67,18 +40,22 @@ import { PrivacyPolicy } from "./app/pages/PrivacyPolicy";
         <Route path="accountconfirm" element={<AccountConfirm />} />
         <Route path="signup" element={<SignUp/>} />
         <Route path="ForgotPassword" element={<ForgotPassword/>} />
-        <Route path="bulwarklanding" element={<BulwarkLanding />} />
+
+        
         <Route path="privacypolicy" element={<PrivacyPolicy/>} />
        
         
+
+        <Route path="BulwarkLanding/" element={<BulwarkLanding />} />
+
 
       
         
         
             </Routes>
-      </BrowserRouter>
+       </BrowserRouter>
 
-    </div>
+    
   );
 }
 export default App

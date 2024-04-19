@@ -25,6 +25,7 @@
     padding-right: 20px; /* Add spacing between text and image */
     font-size: 12px;
     margin-top: 10%;
+    /* text-align: start; */
 
 }
 
@@ -32,12 +33,14 @@
     color:black;
     font-size: 20px;
     font-weight: bold;
+    text-align: start;
     
 
 }
 
     .text p{
         font-size: 14px;
+        text-align: start;
     }
 
 .image {
