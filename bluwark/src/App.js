@@ -21,6 +21,7 @@ import { ForgotPassword } from "./app/pages/ForgotPassword";
 // import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 // import IsProtectedRoute from './IsProtectedRoute';
 import { BulwarkLanding } from './app/pages/BulwarkLanding';
+import {BulwarkAboutUs} from './app/pages/BulwarkAboutUs'
 
 
  function App() {
@@ -35,8 +36,7 @@ import { BulwarkLanding } from './app/pages/BulwarkLanding';
         <Route path="signup" element={<SignUp/>} />
         <Route path="ForgotPassword" element={<ForgotPassword/>} />
         <Route path="BulwarkLanding/" element={<BulwarkLanding />} />
-
-      
+        <Route path="BulwarkAboutUs/" element={<BulwarkAboutUs />} />
         
         
             </Routes>
