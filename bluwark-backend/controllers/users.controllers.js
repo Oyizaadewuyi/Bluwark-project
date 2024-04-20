@@ -25,22 +25,14 @@ class UserController {
 				});
 			}
 
-			//  // Validate password and confirm password match
-			// if (password !== confirmPassword) {
-			// 	return res.status(400).json({
-			// 		success: false,
-			// 		message: "Password and confirm password must match",
-			// 	});
-			// }
-
-			// Create a new user object with hashed password
+			// Create a new user
 			const newUser = {
 				firstName,
 				lastName,
 				emailAddress,
 				companyName,
 				password,
-                confirmPassword
+				confirmPassword,
 			};
 
 			// Save the user to the database
@@ -55,6 +47,55 @@ class UserController {
 			res.status(500).json({
 				success: false,
 				message: "Error creating user",
+				error: error.message,
+			});
+		}
+	}
+
+	async loginUser(req, res) {
+		const { emailAddress, password } = req.body;
+
+		try {
+			// Find user by email address
+			const user = await UserService.findOne({ emailAddress });
+
+			if (!user) {
+				return res.status(401).json({
+					success: false,
+					message: "Invalid email address",
+				});
+			}
+
+			// Check password
+			const isPasswordValid = await bcrypt.compare(password, user.password);
+
+			if (!isPasswordValid) {
+				return res.status(401).json({
+					success: false,
+					message: "Invalid password",
+				});
+			}
+
+			// Generate JWT token
+			const token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, {
+				expiresIn: "1h",
+			});
+
+			res.status(200).json({
+				success: true,
+				message: "Login successful",
+				token,
+				user: {
+					id: user._id,
+					firstName: user.firstName,
+					lastName: user.lastName,
+					emailAddress: user.emailAddress,
+				},
+			});
+		} catch (error) {
+			res.status(500).json({
+				success: false,
+				message: "Error logging in",
 				error: error.message,
 			});
 		}
