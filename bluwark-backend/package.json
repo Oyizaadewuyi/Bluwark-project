@@ -6,7 +6,7 @@
 	"scripts": {
 		"start": "nodemon server.js",
 		"start:prod": "node server.js",
-        "build": "mkdir -p build && cp -r src/* build/ && npm install && echo 'Build complete.'",
+        "build": "npm install",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [],
