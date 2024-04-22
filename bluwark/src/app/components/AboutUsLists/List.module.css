@@ -1,0 +1,63 @@
+.List {
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+     padding: 30px 5%; 
+    width: 80%;
+    border: 1px solid white;
+    margin-left: 10.5%;
+    margin-top: 5%;
+}
+
+
+.List .list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+
+.List .list .item {
+    width: 285px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+.cardContainer {
+    width: 200px; /* Set width */
+    height: 250px; /* Set height */
+    border: 1px solid #aaaadc; /* Add border */
+    background-color: #E0E0FD; /* Set background color */
+    padding: 20px; /* Add padding */
+    margin-right: 20px; /* Add right margin */
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .List .list .item .title {
+    font-size: 30px;
+    font-weight: 700;
+   
+    margin-top: -25%;
+}
+
+
+  .List .list .item .description {
+    font-size: 16px;
+    text-align: start;
+    margin-top: -8%;
+    color: #5E5E5E;
+    
+}
+
+
+
