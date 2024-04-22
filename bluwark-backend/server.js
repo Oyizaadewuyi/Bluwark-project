@@ -3,6 +3,7 @@ const express = require("express");
 const cors = require("cors");
 const connectDB = require("./database");
 const route = require("./routes/users.route");
+const urlRoute = require("./routes/safe-browsing.route")
 
 require("dotenv").config();
 
@@ -21,6 +22,7 @@ connectDB();
 
 // using the route
 app.use("/bluwark/v1", route);
+app.use("/bluwark/v1", urlRoute);
 
 const port = process.env.PORT || 3001;
 
