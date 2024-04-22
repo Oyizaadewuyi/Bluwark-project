@@ -5,6 +5,7 @@ import { CustomInputField } from "../../components/Inputfield/InputField"
 import { Logo } from "../../components/Logo/Logo";
 import CustomButton from "../../components/Button";
 import Image2 from "../../components/Assets/images/image 2.png";
+import { Link } from "react-router-dom";
 
 export const ForgotPassword = () => {
     const [email, emailchange] = useState("");
@@ -23,9 +24,24 @@ export const ForgotPassword = () => {
            
             <div className={style.signin_image}>
             <div className={style.forgot_field}>
-            <h5>Back to login</h5>
+            
+            <h5 className={style.login}>
+            {/* Back to login{" "} */}
+            <span>
+              <Link to={"/login"}>
+              <a
+                href="#/"
+                className={action === "Sign Up" ? "submit gray" : "submit"}
+              >
+                Back to login
+              </a>
+              </Link>
+            </span>
+
+          </h5>
             <br />
         <h2>Forgot your password?</h2>
+        
        
         <p>Don’t worry, happens to all of us. Enter your email below to recover your password</p>
 <br />
