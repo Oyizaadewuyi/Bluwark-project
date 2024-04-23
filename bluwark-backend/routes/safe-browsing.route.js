@@ -11,12 +11,12 @@ router.post("/check-url", (req, res) => {
 
 	const payload = {
 		client: {
-			clientId: "",
+			clientId: "bluwark-project",
 			clientVersion: "1.0.0",
 		},
 		threatInfo: {
 			threatTypes: ["MALWARE", "SOCIAL_ENGINEERING"],
-			platformTypes: ["ALL_PLATFORMS"],
+			platformTypes: ["ANY_PLATFORM"],
 			threatEntryTypes: ["URL"],
 			threatEntries: [{ url }],
 		},
@@ -36,16 +36,20 @@ router.post("/check-url", (req, res) => {
 			console.log("Response:", body);
 			if (body && body.matches && body.matches.length > 0) {
 				const { threatType } = body.matches[0];
-				res.json({
-					safe: false,
-					threatType,
-					message: "Threat detected, the url is not safe to visit",
-				});
+				const message =
+					threatType === "MALWARE"
+						? "Malware detected"
+						: threatType === "SOCIAL_ENGINEERING"
+						? "Social engineering threat detected"
+						: "Unknown threat detected";
+
+				res.json({ safe: false, threatType, message });
 			} else {
-				res.json({ safe: true , message: "The url is safe to visit"});
+				res.json({ safe: true, message: "The URL is safe to visit" });
 			}
 		}
 	});
+
 });
 
 module.exports = router;
