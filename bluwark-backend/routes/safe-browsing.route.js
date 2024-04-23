@@ -11,7 +11,7 @@ router.post("/check-url", (req, res) => {
 
 	const payload = {
 		client: {
-			clientId: apiKey,
+			clientId: `${apiKey}`,
 			clientVersion: "1.0.0",
 		},
 		threatInfo: {
