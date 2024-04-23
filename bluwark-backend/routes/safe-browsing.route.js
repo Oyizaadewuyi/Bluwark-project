@@ -11,7 +11,7 @@ router.post("/check-url", (req, res) => {
 
 	const payload = {
 		client: {
-			clientId: "bluwark-project",
+			clientId: process.env.SAFE_BROWSING_KEY,
 			clientVersion: "1.0.0",
 		},
 		threatInfo: {
