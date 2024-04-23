@@ -4,14 +4,14 @@ const request = require("request");
 require("dotenv").config();
 
 const apiKey = process.env.SAFE_BROWSING_KEY;
-const apiUrl = "https://safebrowsing.googleapis.com/v4/threatMatches:find";
+const apiUrl = `https://safebrowsing.googleapis.com/v4/threatMatches:find?key=${apiKey}`;
 
 router.post("/check-url", (req, res) => {
 	const { url } = req.body;
 
 	const payload = {
 		client: {
-			clientId: "bluwark-project",
+			clientId: apiKey,
 			clientVersion: "1.0.0",
 		},
 		threatInfo: {
@@ -24,7 +24,6 @@ router.post("/check-url", (req, res) => {
 
 	const options = {
 		url: apiUrl,
-		qs: { key: apiKey },
 		json: payload,
 	};
 
