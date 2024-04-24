@@ -23,6 +23,7 @@ import { PrivacyPolicy } from "./app/pages/PrivacyPolicy";
 // import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 // import IsProtectedRoute from './IsProtectedRoute';
 
+import {BulwarkAboutUs} from './app/pages/BulwarkAboutUs';
 
 
  function App() {
@@ -48,10 +49,11 @@ import { PrivacyPolicy } from "./app/pages/PrivacyPolicy";
 
         <Route path="BulwarkLanding/" element={<BulwarkLanding />} />
 
+        <Route path="BulwarkAboutUs/" element={<BulwarkAboutUs />} />
+
+
 
       
-        
-        
             </Routes>
        </BrowserRouter>
 
