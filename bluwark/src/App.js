@@ -8,6 +8,8 @@ import{ SignUp} from "./app/pages/SignUpPage/index";
 import { ForgotPassword } from "./app/pages/ForgotPassword";
 import { BulwarkLanding } from './app/pages/BulwarkLanding';
 import { PrivacyPolicy } from "./app/pages/PrivacyPolicy";
+import {BulwarkAboutUs} from './app/pages/BulwarkAboutUs'
+
 
 
 
@@ -23,7 +25,6 @@ import { PrivacyPolicy } from "./app/pages/PrivacyPolicy";
 // import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 // import IsProtectedRoute from './IsProtectedRoute';
 
-import {BulwarkAboutUs} from './app/pages/BulwarkAboutUs'
 
 
  function App() {
@@ -48,12 +49,14 @@ import {BulwarkAboutUs} from './app/pages/BulwarkAboutUs'
         
 
         <Route path="BulwarkLanding/" element={<BulwarkLanding />} />
+        <Route path="BulwarkAboutUs/" element={<BulwarkAboutUs />} />
 
       
         
         
             </Routes>
        </BrowserRouter>
+       </div>
 
     
   );

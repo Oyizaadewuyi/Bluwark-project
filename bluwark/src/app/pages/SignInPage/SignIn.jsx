@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { useHistory } from 'react-router-dom';
+
 
 import style from "./style.module.css";
 
@@ -13,15 +15,17 @@ import {CustomInputField} from "../../components/Inputfield/InputField";
 import { Logo } from "../../components/Logo/Logo";
 
 const SignIn = () => {
-  const [email, emailchange] = useState("");
-  const [password, passwordchange] = useState("");
-  const [action, setName] = useState("Login");
 
+ 
+   const [email, emailchange] = useState("");
+   const [password, passwordchange] = useState("");
+   const [action, setName] = useState("Login");
+  
   const handlesubmit = (e) => {
     e.preventDefault();
     let regobj = { email, password };
-    console.log(regobj);
-  };
+   console.log(regobj);
+   };
   return (
     <div className={style.background}>
       <div className={style.logo_container}>

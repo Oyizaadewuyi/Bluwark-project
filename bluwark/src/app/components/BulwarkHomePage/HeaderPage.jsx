@@ -17,9 +17,13 @@ const HeaderPage = () => {
             <li>
                 <a href="/Features">Features</a>
             </li>
-            <li><a href="/Resources">Resources</a></li>
+            <li>
+                <a href="/Education">Education</a>
+            </li>
+            
+            <li><a href="/Alert">Alert</a></li>
 
-            <li><a href="/About us">About us</a></li>
+            <li><a href="/Contact us">Contact us</a></li>
 
             
             
