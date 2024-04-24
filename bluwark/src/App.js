@@ -34,7 +34,7 @@ import {BulwarkAboutUs} from './app/pages/BulwarkAboutUs';
        
         
 
-        <Route path="bulwarklanding/" element={<BulwarkLanding />} />
+        <Route path="bulwarkLanding/" element={<BulwarkLanding />} />
 
         <Route path="BulwarkAboutUs/" element={<BulwarkAboutUs />} />
 

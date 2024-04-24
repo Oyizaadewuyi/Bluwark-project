@@ -2,8 +2,8 @@ import style from "./style.module.css";
 import HeaderPage from "../../components/BulwarkHomePage/HeaderPage";
 import privacyPolicyImage from "../../components/Assets/images/Privacy_Policy.png";
 import { PolicyAgreement } from "../../components/policyAgreement/data";
-import { CustomFooter, Footer } from "../../components/Footer/Footer";
-import PrivacyPolicyCheckbox from "../../components/PrivacyPolicyCheckBox/checkkbox";
+import { CustomFooter } from "../../components/Footer/Footer";
+import PrivacyPolicyCheckbox from "../../components/PrivacyPolicyCheckBox/data";
 import Button from "../../components/Button";
 
 export const PrivacyPolicy = () => {
