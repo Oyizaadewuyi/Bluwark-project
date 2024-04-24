@@ -10,19 +10,6 @@ import { BulwarkLanding } from './app/pages/BulwarkLanding';
 import { PrivacyPolicy } from "./app/pages/PrivacyPolicy";
 
 
-
-
-// import React from 'react'
-// import HeaderPage from './app/components/BulwarkHomePage/HeaderPage'
-// import Hero from './app/components/BulwarkHeroPage/Hero'
-// import Services from './app/components/BulwarkServices/Services'
-// import { Protection } from './app/components/BulwarkProtection/Protection'
-// import { Testimonials } from './app/components/BulwarkTestimonials/Testimonials'
-// import { ContactForm } from './app/components/BulwarkContactForm/ContactForm'
-// import { Footer }  from './app/components/Footer/Footer'
-// import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-// import IsProtectedRoute from './IsProtectedRoute';
-
 import {BulwarkAboutUs} from './app/pages/BulwarkAboutUs';
 
 
@@ -47,7 +34,7 @@ import {BulwarkAboutUs} from './app/pages/BulwarkAboutUs';
        
         
 
-        <Route path="BulwarkLanding/" element={<BulwarkLanding />} />
+        <Route path="bulwarklanding/" element={<BulwarkLanding />} />
 
         <Route path="BulwarkAboutUs/" element={<BulwarkAboutUs />} />
 

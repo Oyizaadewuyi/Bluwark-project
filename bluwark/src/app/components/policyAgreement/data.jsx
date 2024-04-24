@@ -5,7 +5,7 @@ export const PolicyAgreement = () => {
     <main className={style.policy_Agreement}>
       <ol>
       <p>
-        Thank you for choosing <span><b>BULWARK</b></span>, the intrusion detection and
+        Thank you for choosing <b>BULWARK</b>, the intrusion detection and
         cybersecurity education/awareness app. This Privacy Policy outlines how
         we collect, use, disclose, and safeguard your information when you use
         our App. Please read this Privacy Policy carefully. By accessing or
@@ -40,10 +40,10 @@ export const PolicyAgreement = () => {
       <br />
      <li>
      <p>
-       <h5> 2. How We Use Your Information </h5>
+       <h5> How We Use Your Information </h5>
        <ol>
        <li>
-       <span>2.1 Personal Information:</span> - To provide
+       <span>Personal Information:</span> - To provide
         and maintain our App. - To improve, personalize, and enhance your
         experience with our App. - To communicate with you, either directly or
         through one of our partners, including for customer service, to provide
@@ -52,7 +52,7 @@ export const PolicyAgreement = () => {
         and resolve disputes. 
        </li>
        <li> 
-        <span>2.2 Non-Personal Information:</span> - To analyse trends,
+        <span>Non-Personal Information:</span> - To analyse trends,
         administer the App, track user movements, and gather demographic
         information for aggregate use. - To customize content and advertising
         displayed on the App. - For research and analytical purposes to improve
@@ -63,15 +63,15 @@ export const PolicyAgreement = () => {
      <br />
       <li>
         <p>
-        <h5>3. How We Disclose Your Information </h5>
+        <h5> How We Disclose Your Information </h5>
         <ol>
-       <li><span> 3.1 Personal Information:</span> We may
+       <li><span>Personal Information:</span> We may
         disclose your personal information to third parties only in the
         following circumstances: - With your consent. - To comply with legal
         obligations or respond to lawful requests from public authorities. - To
         protect our rights, protect your safety or the safety of others,
         investigate fraud, or respond to a government request. </li>
-        <li><span>3.2 Non-Personal Information:</span> We may disclose non-personal information for the same
+        <li><span>Non-Personal Information:</span> We may disclose non-personal information for the same
         purposes as described above, and also to third-party service providers
         who help us operate and improve our App.</li>
         </ol>
@@ -80,7 +80,7 @@ export const PolicyAgreement = () => {
       <br />
       <li>
       <p>
-        <h5>4. Security:</h5> 
+        <h5>Security:</h5> 
         <ol>
         We take reasonable measures to protect the information
         collected through our App from loss, theft, misuse, unauthorized access,
@@ -92,7 +92,7 @@ export const PolicyAgreement = () => {
       </li>
       <br />
       <li><p>
-        <h5>5. Children&#39;s Privacy:</h5> 
+        <h5> Children&#39;s Privacy:</h5> 
         <ol>
         Our App is not intended for use by children
         under the age of 13. We do not knowingly collect personal information
@@ -104,7 +104,7 @@ export const PolicyAgreement = () => {
       </p></li>
       <br />
     <li>  <p>
-        <h5>6. Changes to This Privacy Policy:</h5> 
+        <h5> Changes to This Privacy Policy:</h5> 
         <ol>
         We reserve the right to update or
         change our Privacy Policy at any time. Any changes will be posted on
@@ -116,7 +116,7 @@ export const PolicyAgreement = () => {
       </p></li>
       <br />
       <li><p>
-        <h5>7. Contact Us:</h5> 
+        <h5> Contact Us:</h5> 
         <ol>
         If you have any questions or concerns about this Privacy
         Policy or our practices regarding your information, please contact us at

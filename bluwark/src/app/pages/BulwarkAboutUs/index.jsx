@@ -4,7 +4,7 @@ import HeaderPage from "../../components/BulwarkHomePage/HeaderPage";
 import { AboutUs } from '../../components/AboutUs/data';
 import {List} from '../../components/AboutUsLists/List'
 import { GetInTouch } from '../../components/AboutUsContact/GetInTouch';
-import {Footer} from '../../components/Footer/Footer'
+import {CustomFooter} from '../../components/Footer/Footer'
  
 
 
@@ -16,7 +16,7 @@ export const BulwarkAboutUs = () => {
     <AboutUs/>
     <List />
     <GetInTouch/>
-    <Footer/>
+    <CustomFooter/>
       
   </main>
   )
