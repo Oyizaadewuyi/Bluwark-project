@@ -11,7 +11,7 @@ export const Hero = (props) => {
   return (
     <section className={`${style.hero} ${props.className}`}>
     <h1 className={style.title}>
-         "Your best choice<br/>to protect your online life"
+         Your best choice<br/>to protect your online life
     </h1>
     <p className={style.description}> We believe everyone has the right to be safe online, which is why we offer<br/> our award-winning free antivirus to millions of people around the world</p>
      <div className={style['button-group']}>

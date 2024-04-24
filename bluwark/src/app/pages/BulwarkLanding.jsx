@@ -5,9 +5,9 @@ import Services from "../components/BulwarkServices/Services";
 import { Protection } from "../components/BulwarkProtection/Protection";
 import { ContactForm } from "../components/BulwarkContactForm/ContactForm";
 
-import { CustomFooter, Footer } from "../components/Footer/Footer";
+import { CustomFooter } from "../components/Footer/Footer";
 
-import { Footer } from "../components/Footer/Footer";
+// import { Footer } from "../components/Footer/Footer";
 import { Testimonials } from "../components/BulwarkTestimonials/Testimonials";
 import { FrequentlyAskedQuestion } from "../components/BulwarkFaq/FrequentlyAskedQuestion";
 import { Scan } from "../components/BulwarkScan/Scan";
@@ -29,7 +29,7 @@ export function BulwarkLanding() {
          <Scan/>
          <FrequentlyAskedQuestion/>
          <ContactForm/>
-        <Footer/> 
+        <CustomFooter/> 
 </div>
     );
   }

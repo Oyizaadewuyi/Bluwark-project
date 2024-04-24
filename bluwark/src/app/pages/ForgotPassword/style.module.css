@@ -12,6 +12,16 @@
     
     padding: 20px;
 }
+.login, a {
+    
+    font-size: 14px;
+    
+}
+.forgot {
+    font-size: 40px;
+}
+
+
 .forgot_field {
     display: flex;
     flex-direction: column;
@@ -24,4 +34,8 @@ form {
     flex-direction: column;
     justify-content: flex-start;
     width: 95%;
+}
+.sideimage {
+    width: 600px;
+    height: 500px;
 }

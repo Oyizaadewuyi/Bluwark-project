@@ -3,6 +3,8 @@ import HeaderPage from "../../components/BulwarkHomePage/HeaderPage";
 import privacyPolicyImage from "../../components/Assets/images/Privacy_Policy.png";
 import { PolicyAgreement } from "../../components/policyAgreement/data";
 import { CustomFooter, Footer } from "../../components/Footer/Footer";
+import PrivacyPolicyCheckbox from "../../components/PrivacyPolicyCheckBox/checkkbox";
+import Button from "../../components/Button";
 
 export const PrivacyPolicy = () => {
   return (
@@ -21,8 +23,14 @@ export const PrivacyPolicy = () => {
         </div>
         <div className={style.policy}>
           <PolicyAgreement />
+          <br />
+<PrivacyPolicyCheckbox/>
+
+<button className={style.btn}>Submit</button>
         </div>
-        <div>
+
+
+        <div className={style.Footer}> 
           <CustomFooter />
         </div>
       </section>

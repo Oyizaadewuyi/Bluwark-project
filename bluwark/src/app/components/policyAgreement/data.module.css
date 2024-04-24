@@ -2,6 +2,9 @@
     background-color: #ffff;
     padding: 250px 25px;
     width: 1400px;
+    display: flex;
+    justify-content: flex-start;
+    text-align: left;
     
     
 }
@@ -16,4 +19,13 @@ ol, p {
     color: #1b1b1b;;
     font-size: 32px;
     letter-spacing: 0.5%;
+}
+
+.policy_Agreement p,
+.policy_Agreement h5,
+.policy_Agreement ol,
+.policy_Agreement li,
+.policy_Agreement span,
+.policy_Agreement label {
+  text-align: left; /* Align all text inside paragraphs, headings, lists, spans, and labels to the left */
 }
