@@ -55,7 +55,7 @@ import { PrivacyPolicy } from "./app/pages/PrivacyPolicy";
             </Routes>
        </BrowserRouter>
 
-    
+    </div>
   );
 }
 export default App

@@ -10,12 +10,18 @@ import CustomButton from "../../components/Button";
 import { Link } from "react-router-dom";
 import Image2 from "../../components/Assets/images/image 2.png";
 import {CustomInputField} from "../../components/Inputfield/InputField";
-import { Logo } from "../../components/Logo/Logo";
+// import { Logo } from "../../components/Logo/Logo";
 
 const SignIn = () => {
   const [email, emailchange] = useState("");
   const [password, passwordchange] = useState("");
   const [action, setName] = useState("Login");
+
+
+
+
+
+
 
   const handlesubmit = (e) => {
     e.preventDefault();
@@ -25,7 +31,7 @@ const SignIn = () => {
   return (
     <div className={style.background}>
       <div className={style.logo_container}>
-        <Logo className={style.logoicon}/>
+        {/* <Logo className={style.logoicon}/> */}
         
         {/* <img src={logo}  alt="logo" /> */}
       </div>
@@ -47,7 +53,7 @@ const SignIn = () => {
               />
               <CustomInputField
                 label="Password"
-                type="text"
+                type="password"
                 placeholder="Enter Password"
                 value={password}
                 onChange={(e) => passwordchange(e.target.value)}
@@ -85,15 +91,16 @@ const SignIn = () => {
             <br />
             <h3 className={style.signin}>
               Don't have an account?{" "}
-              <span>
-                <Link to={"/signup"}>
+              <span >
+                
                   <a
                     href="#/"
                     className={action === "Sign Up" ? "submit gray" : "submit"}
-                  >
+                  ><Link to={"/signup"}>
                     Sign Up
+                    </Link>
                   </a>
-                </Link>
+                
               </span>
             </h3>
 

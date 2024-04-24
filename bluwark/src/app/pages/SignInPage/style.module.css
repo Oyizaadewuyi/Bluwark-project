@@ -1,5 +1,5 @@
 .background {
-    background-color: #cf3f3f;
+    background-color: #E0E0FD;
     padding: 80px 20px;
      /* Background color outside container */
 }
@@ -56,7 +56,7 @@ line-height: 17.07px;
 text-align: left;
 
 }
-.signin {
+.signin  {
     font-family: Nunito;
 font-size: 14px;
 font-weight: 600;
@@ -64,6 +64,10 @@ line-height: 22px;
 letter-spacing: 0.005em;
 text-align: center;
 
+}
+.signup {
+    display: flex;
+    justify-content: center;
 }
 .signinicons{
     font-family: Nunito;
@@ -95,4 +99,5 @@ span, a {
 .sideimage {
     width: 400px;
 }
+
 

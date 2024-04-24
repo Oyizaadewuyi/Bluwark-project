@@ -2,9 +2,10 @@ import { useState } from "react";
 
 import style from './style.module.css'
 import { CustomInputField } from "../../components/Inputfield/InputField"
-import { Logo } from "../../components/Logo/Logo";
+// import { Logo } from "../../components/Logo/Logo";
 import CustomButton from "../../components/Button";
-import Image2 from "../../components/Assets/images/image 2.png";
+import forgotPasswordrafiki from "../../components/Assets/images/forgotPasswordrafiki.png";
+import { MdKeyboardArrowLeft } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 export const ForgotPassword = () => {
@@ -18,9 +19,9 @@ export const ForgotPassword = () => {
 
     return(
         <div  className={style.background}>
-            <div className={style.logo_container}> 
+            {/* <div className={style.logo_container}> 
             <Logo/>
-            </div>
+            </div> */}
            
             <div className={style.signin_image}>
             <div className={style.forgot_field}>
@@ -33,17 +34,17 @@ export const ForgotPassword = () => {
                 href="#/"
                 className={action === "Sign Up" ? "submit gray" : "submit"}
               >
-                Back to login
+                <MdKeyboardArrowLeft/> Back to login
               </a>
               </Link>
             </span>
 
           </h5>
             <br />
-        <h2>Forgot your password?</h2>
+        <h2 className={style.forgot}>Forgot your password?</h2>
         
        
-        <p>Don’t worry, happens to all of us. Enter your email below to recover your password</p>
+        <p className={style.login}>Don’t worry, happens to all of us. Enter your email below to recover your password</p>
 <br />
         <form action="" onSubmit={handlesubmit}>
              
@@ -71,7 +72,7 @@ export const ForgotPassword = () => {
             Create Account
           </Button> */}
               <aside>
-          <img className={style.sideimage} src={Image2} alt="signin_image" />
+          <img className={style.sideimage} src={forgotPasswordrafiki} alt="signin_image" />
         </aside>
 
          </div>

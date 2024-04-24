@@ -22,7 +22,7 @@ export const PrivacyPolicy = () => {
         <div className={style.policy}>
           <PolicyAgreement />
         </div>
-        <div>
+        <div className={style.Footer}> 
           <CustomFooter />
         </div>
       </section>

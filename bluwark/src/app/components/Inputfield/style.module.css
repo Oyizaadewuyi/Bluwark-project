@@ -9,7 +9,7 @@
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    background-color: rgb(250, 245, 245);
+    background-color: transparent;
   }
   
   
@@ -17,7 +17,7 @@
   .input_field {
     width: 100%;
     padding: 10px;
-    border: 1px solid #f5ecec;
+    border: 1px solid #000;
     border-radius: 5px;
     font-size: 16px;
   }
