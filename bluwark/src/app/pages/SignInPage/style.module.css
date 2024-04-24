@@ -1,5 +1,5 @@
 .background {
-    background-color: #cf3f3f;
+    background-color: #ffffff;
     padding: 80px 20px;
      /* Background color outside container */
 }
@@ -9,14 +9,19 @@
 }
 .signin_image {
     display: flex;
-    background-color: #fff;
+    background-color: #E0E0FD;
     justify-content: space-around;
     padding: 20px;
+    padding-top: 40px;
 }
 
 .headerpassage {
     position: relative;
     bottom: 28px;
+    color: #0D265Bed;
+    font-size: 40px;
+    display: flex;
+    justify-content: start;
 }
 .email_company input {
     width: 520px;
@@ -37,7 +42,7 @@ form {
 
 ::placeholder {
     padding: 0px 10px;
-    color: #CAC4CE;
+    color: #474747;
     font-size: 16px;
    }
 
@@ -56,15 +61,23 @@ line-height: 17.07px;
 text-align: left;
 
 }
-.signin {
+.signin  {
     font-family: Nunito;
 font-size: 14px;
 font-weight: 600;
 line-height: 22px;
 letter-spacing: 0.005em;
-text-align: center;
+
+color: #5E5E5E;
+display: flex;
+justify-content: end;
 
 }
+/* .signup {
+    display: flex;
+    justify-content: center;
+    color: blue;
+} */
 .signinicons{
     font-family: Nunito;
     font-size: 12px;
@@ -95,4 +108,5 @@ span, a {
 .sideimage {
     width: 400px;
 }
+
 

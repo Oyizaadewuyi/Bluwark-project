@@ -1,6 +1,6 @@
 .footer_container{
     background-color: black;
-    color: white;
+    color: #F4F3F6;
     display: flex;
     padding: 40px 10%;
     justify-content: space-between;
@@ -35,7 +35,7 @@
 .footerMenu h4 {
    font-size: 18px;
    font-weight: 500; 
-   color: #E0E0FD;
+   color: #F4F3F6;
   
    }
 

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import style from "./style.module.css";
-import { Logo } from "../../components/Logo/Logo";
+// import { Logo } from "../../components/Logo/Logo";
 import Button from "../../components/Button/index";
 import { FcGoogle } from "react-icons/fc";
 import { FaXTwitter } from "react-icons/fa6";
@@ -19,14 +19,6 @@ export const SignUp = () => {
   const [confirmpassword, confirmpasswordchange] = useState("");
   const [action, setName] = useState("Sign Up");
 
-  // const [formData, setFormData] = useState({
-  //   fname: '',
-  //   lname: '',
-  //   email: '',
-  //   company: '',
-  //   password: '',
-  //   cpassword: ''
-  // })
 
   const handlesubmit = (e) => {
     e.preventDefault();
@@ -44,10 +36,10 @@ export const SignUp = () => {
   };
   return (
     <main className={style.background}>
-      <div className={style.logo_container}>
-        {/* <img src={Logo} className={style.logoicon} alt="logo" /> */}
-        <Logo className={style.logoicon}/>
-      </div>
+      
+        {/* <img src={Logo} className={style.logoicon} alt="logo" />
+        <Logo className={style.logoicon}/> */}
+   
       <br />
       <section className={style.signup_image}>
         <aside className={style.SignUpcontainer}>

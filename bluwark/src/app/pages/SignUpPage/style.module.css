@@ -4,12 +4,12 @@
     
 }
 .logo_container {
-    background-color: blue;
+    background-color: rgb(255, 123, 0);
 }
 .signup_image {
     display: flex;
-    flex-direction: row;
-    /* gap: 10px; */
+    /* flex-direction: row; */
+    gap: 10px;
     background-color: #fff;
     justify-content: space-around;
     
@@ -87,8 +87,8 @@ text-align: left;
     border-radius: 4px;
 }
 .sideimage {
-    width: 500px;
-    height: 647.65px;
+    width: 400px;
+    /* height: 647.65px; */
     gap: 0px;
     opacity: 0px;
     background-color: black;
@@ -99,3 +99,7 @@ text-align: left;
    color: rgba(71, 71, 71, 0.4);
    
 }
+/* .sideimage {
+    width: 400px;
+} */
+

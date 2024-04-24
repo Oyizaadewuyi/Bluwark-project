@@ -21,7 +21,11 @@
 }
 .description {
     font-size: 1.5rem;
+<<<<<<< HEAD
     color: black;
+=======
+    color: #2F1500;
+>>>>>>> 349509c34e9f2d8de65b53c7397f20b824835e40
 }
 
 .herobutton {

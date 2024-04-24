@@ -45,6 +45,24 @@
     position: relative;
     top: 830px;
 }
+.btn{
+    background-color: #0060B4;
+    width: 230px;
+    height: 40px;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    
+}
+.policy button .btn {
+    /* display: flex;
+    justify-content: flex-end;
+    align-items: flex-end; */
+    
+}
 .Footer {
     background-color: red;
+    position: relative;
+    top: 900px;
+    
 }

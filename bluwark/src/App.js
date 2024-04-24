@@ -25,6 +25,7 @@ import {BulwarkAboutUs} from './app/pages/BulwarkAboutUs'
 // import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 // import IsProtectedRoute from './IsProtectedRoute';
 
+// import {BulwarkAboutUs} from './app/pages/BulwarkAboutUs';
 
 
  function App() {
@@ -54,11 +55,18 @@ import {BulwarkAboutUs} from './app/pages/BulwarkAboutUs'
       
         
         
+         <Route path="bulwarklanding/" element={<BulwarkLanding />} />
+
+         <Route path="BulwarkAboutUs/" element={<BulwarkAboutUs />} />
+
+
+
+      
             </Routes>
        </BrowserRouter>
        </div>
 
-    
+  
   );
 }
 export default App
