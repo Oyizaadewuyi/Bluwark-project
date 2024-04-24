@@ -11,7 +11,12 @@ require("dotenv").config();
 const app = express();
 
 // adding cors
-app.use(cors());
+const corsOptions = {
+	credentials: true,
+	origin: ["http://localhost:3000","http://localhost:3001", "*"], 
+};
+
+app.use(cors(corsOptions));
 
 // using express for json
 app.use(express.json());
@@ -24,7 +29,7 @@ connectDB();
 app.use("/bluwark/v1", route);
 app.use("/bluwark/v1", urlRoute);
 
-const port = process.env.PORT || 3001;
+const port = process.env.PORT || 3000 || 3001;
 
 app.get("/ping", (req, res) => {
 	res.status(200).json({ message: "pong" });
