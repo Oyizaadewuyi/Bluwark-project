@@ -6,6 +6,10 @@ import VerifyEmail from "./app/pages/VerifyEmailPage/VerifyEmail";
 import AccountConfirm from "./app/pages/AccountConfirmation/AccountConfirm";
 import{ SignUp} from "./app/pages/SignUpPage/index";
 import { ForgotPassword } from "./app/pages/ForgotPassword";
+import { BulwarkLanding } from './app/pages/BulwarkLanding';
+import { PrivacyPolicy } from "./app/pages/PrivacyPolicy";
+
+
 
 
 // import React from 'react'
@@ -16,16 +20,18 @@ import { ForgotPassword } from "./app/pages/ForgotPassword";
 // import { Testimonials } from './app/components/BulwarkTestimonials/Testimonials'
 // import { ContactForm } from './app/components/BulwarkContactForm/ContactForm'
 // import { Footer }  from './app/components/Footer/Footer'
- 
-
 // import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 // import IsProtectedRoute from './IsProtectedRoute';
-import { BulwarkLanding } from './app/pages/BulwarkLanding';
+
 import {BulwarkAboutUs} from './app/pages/BulwarkAboutUs'
 
 
  function App() {
   return (
+
+    <div>
+
+
     <BrowserRouter>
       <Routes>
  
@@ -35,8 +41,15 @@ import {BulwarkAboutUs} from './app/pages/BulwarkAboutUs'
         <Route path="accountconfirm" element={<AccountConfirm />} />
         <Route path="signup" element={<SignUp/>} />
         <Route path="ForgotPassword" element={<ForgotPassword/>} />
+
+        
+        <Route path="privacypolicy" element={<PrivacyPolicy/>} />
+       
+        
+
         <Route path="BulwarkLanding/" element={<BulwarkLanding />} />
-        <Route path="BulwarkAboutUs/" element={<BulwarkAboutUs />} />
+
+      
         
         
             </Routes>

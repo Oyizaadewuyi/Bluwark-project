@@ -13,7 +13,7 @@ import { FaFacebookF, FaMapMarkerAlt, FaTwitterSquare } from 'react-icons/fa'
 
 
 
-export const Footer = () => {
+export const CustomFooter = () => {
   return (
     <div className={style.footer_container}>
       <div className='row py-5'>

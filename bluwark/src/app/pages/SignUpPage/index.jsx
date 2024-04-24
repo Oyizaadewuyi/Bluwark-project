@@ -7,6 +7,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaFacebookF } from "react-icons/fa";
 import Image2 from "../../components/Assets/images/image 2.png";
 import { CustomInputField } from "../../components/Inputfield/InputField";
+import { Link } from "react-router-dom";
 
 export const SignUp = () => {
   const [id, idchange] = useState("");
@@ -134,13 +135,16 @@ export const SignUp = () => {
     <h3 className={style.login}>
           Already have an account?{" "}
             <span>
-              <a
-                href="#/"
-                className={action === "Sign Up" ? "submit gray" : "submit"}
-              >
-                Login
-              </a>
+            <Link to={"/signin"}>
+                  <a
+                    href="#/"
+                    className={action === "Sign Up" ? "submit gray" : "submit"}
+                  >
+                    Login
+                  </a>
+                </Link>
             </span>
+           
 
           </h3>
           

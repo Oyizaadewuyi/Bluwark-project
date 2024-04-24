@@ -1,5 +1,5 @@
 import React from "react"
-import styles from './style.module.css'
+import styles from './style.module.css
 import FrameA from '../Assets/images/FrameA.png'
  import FrameB from '../Assets/images/FrameB.png'
 import FrameC from '../Assets/images/FrameC.png'

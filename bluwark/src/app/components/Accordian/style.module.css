@@ -1,0 +1,9 @@
+.accordion_box {
+    padding: 1rem 2rem;
+    background-color: red;
+    border: 1.5px solid blue;
+    margin-bottom: 2rem;
+    border-radius: 9px;
+    text-align: left;
+    
+}
