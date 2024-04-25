@@ -15,11 +15,13 @@ import { FaFacebookF } from "react-icons/fa";
 import Image2 from "../../components/Assets/images/image 2.png";
 import { CustomInputField } from "../../components/Inputfield/InputField";
 // import { Link } from "react-router-dom";
-import { Navigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+
 
 
 
 export const SignUp = () => {
+  const navigate=useNavigate()
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -32,15 +34,18 @@ export const SignUp = () => {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
   const [signedUp, setSignedUp] = useState(false); // State for redirect
+  // const [loading, setLoading] = useState(false);
+
+  
 
   // const history = useHistory();
 
 
   const handleChange = (e) => {
-    const { name, value, type, checked } = e.target;
+    const { name, value, } = e.target;
     setFormData(prevData => ({
       ...prevData,
-      [name]: type === 'checkbox' ? checked : value
+      [name]  :value
     }));
   };
 
@@ -66,7 +71,7 @@ export const SignUp = () => {
         const errorData = await response.json();
         throw new Error(errorData.message);
       }
-      // history.push('/SignIn');
+      navigate("/signin")
 
 
       // Assuming your backend responds with some data after successful signup
@@ -89,9 +94,9 @@ export const SignUp = () => {
       setLoading(false);
     }
   };
-  if (signedUp) {
-    return <Navigate to="/SignIn" />;
-  }
+  // if (signedUp) {
+  //   return <avigate to="/SignIn" />;
+  // }
 
   return (
     <main className={style.background}>
@@ -107,19 +112,21 @@ export const SignUp = () => {
             <div className={style.nameforms}>
               <CustomInputField
                 label="First Name"
+                id="firstName"
                 type="text"
                 name="firstName"
                 placeholder="Enter First Name"
-                // value={formData.firstName}
+                 value={formData.firstName}
                 onChange={handleChange}
                 required
               />
               <CustomInputField
                 label="Last Name"
+                id="lastName"
                 type="text"
                 name="lastName"
                 placeholder="Enter Last Name"
-                // value={formData.lastName}
+                 value={formData.lastName}
                 onChange={handleChange}
                 required
               />
@@ -128,19 +135,23 @@ export const SignUp = () => {
             <div className={style.email_company}>
               <CustomInputField
                 label="Email address"
+                id="emailAddress"
+
                 type="email"
                 name="emailAddress"
                 placeholder="Enter your Email"
-                // value={formData.email}
+                 value={formData.emailAddress}
                 onChange={handleChange}
                 required
               />
               <CustomInputField
                 label="Company Name"
+                id="companyName"
+
                 type="text"
                 name="companyName"
                 placeholder="Enter company name"
-                // value={formData.companyName}
+                 value={formData.companyName}
                 onChange={handleChange}
                 required
               />
@@ -149,19 +160,23 @@ export const SignUp = () => {
             <div className={style.nameforms}>
               <CustomInputField
                 label="Password"
+                id="password"
+
                 type="password"
                 name="password"
                 placeholder="Enter Password"
-                // value={formData.password}
+                 value={formData.password}
                 onChange={handleChange}
                 required
               />
               <CustomInputField
                 label="Confirm Password"
                 type="password"
+                id="confirmPassword"
+
                 name="confirmPassword"
                 placeholder="Confirm Password"
-                // value={formData.confirmPassword}
+                 value={formData.confirmPassword}
                 onChange={handleChange}
                 required
               />
@@ -172,10 +187,14 @@ export const SignUp = () => {
               <label htmlFor="checkboxs">I agree to all the Terms and Privacy Policies</label>
             </div>
 
-            <button className={style.signupBtn} disabled={loading}>
+            <button type="submit" className={style.signupBtn} disabled={loading}>
+  {loading ? 'Signing Up...' : 'Create Account'}
+</button>
+
+             {/* <button type='submit' className={style.signupBtn} disabled={loading}>
               {loading ? 'Signing Up...' : 'Create Account'}
-            </button>
-          </form>
+            </button> */}
+          </form> 
         </div>
 
 

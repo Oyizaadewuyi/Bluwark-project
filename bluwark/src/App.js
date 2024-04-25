@@ -37,7 +37,7 @@ import {BulwarkAboutUs} from './app/pages/BulwarkAboutUs'
     <BrowserRouter>
       <Routes>
  
-        <Route index element={<SignIn />} />
+        <Route index element={<BulwarkLanding />} />
         <Route path="signin" element={<SignIn />} />
         <Route path="verifyemail" element={<VerifyEmail />} />
         <Route path="accountconfirm" element={<AccountConfirm />} />
