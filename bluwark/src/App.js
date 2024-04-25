@@ -11,6 +11,7 @@ import { PrivacyPolicy } from "./app/pages/PrivacyPolicy";
 
 
 import {BulwarkAboutUs} from './app/pages/BulwarkAboutUs';
+import ProductPage from "./app/pages/ProductPage";
 import Quiz from "./app/pages/Quiz/index";
 import Test from "./app/pages/test2";
 
@@ -40,14 +41,12 @@ import Test from "./app/pages/test2";
         <Route path="bulwarkLanding/" element={<BulwarkLanding />} />
 
         <Route path="BulwarkAboutUs/" element={<BulwarkAboutUs />} />
-        <Route path="quiz/" element={<Quiz />} />
+
+        <Route path="productpage" element={<ProductPage />} />
+					<Route path="BulwarkAboutUs/" element={<BulwarkAboutUs />} />
+
+          <Route path="quiz/" element={<Quiz />} />
         <Route path="Test/" element={<Test />} />
-        
-
-
-
-
-      
             </Routes>
        </BrowserRouter>
 
