@@ -99,6 +99,14 @@ text-align: left;
    color: rgba(71, 71, 71, 0.4);
    
 }
+.signupBtn {
+    color: white;
+    background-color: blue;
+    width: 600px;
+    height: 7vh;
+    border: 1px solid blue;
+    border-radius: 25px;
+}
 /* .sideimage {
     width: 400px;
 } */

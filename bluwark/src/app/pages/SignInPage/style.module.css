@@ -108,5 +108,8 @@ span, a {
 .sideimage {
     width: 400px;
 }
+.CustomButton {
+    color: red;
+}
 
 

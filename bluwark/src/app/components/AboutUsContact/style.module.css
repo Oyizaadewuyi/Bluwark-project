@@ -33,29 +33,38 @@ body {
     background-color: #E0E0FD;
     margin-left: 20px;
     padding-left: 20px;
+    height: 50vh;
     
 }
 
 .getintouchdesc  {
-    color: #111111;
+    color:#111111;
     text-align: start;
     font-weight: 500;
-
+    font-size: 28px;
 }
 
 input {
-    width: 350px;
+    width: 400px;
 }
 
 
 
 .formGroup textarea {
-}
+    width:400px;
+    height: 15vh;
+   }
 
 .getbtn {
     background-color: #0D265B;
     height: 40px;
-    margin-top: -5%;
+    margin-top: -3%;
     color: white;
     border: 1px solid #0D265B;
+    width: 300px;
+   text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-left: 10%;
 }

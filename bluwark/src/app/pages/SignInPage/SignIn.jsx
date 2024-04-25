@@ -219,75 +219,56 @@
 
 
 
-import React, { useState, useEffect } from "react";
+ import React, { useState} from "react";
 import style from "./style.module.css";
-import { useNavigation } from "../../components/hooks/useNavigation"
+// import { useHistory} from 'react-router-dom'
+// import { redirect } from "react-router-dom";
+// import { useNavigation } from "../../components/hooks/useNavigation"
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 import CustomButton from "../../components/Button";
-import { Link } from "react-router-dom";
+ import { Link } from "react-router-dom";
 import Image2 from "../../components/Assets/images/image 2.png";
-import toast from 'react-hot-toast';
+// import toast from 'react-hot-toast';
 import { CustomInputField } from "../../components/Inputfield/InputField";
-import { isUserLogin } from "../../../utilis/user";
+// import { useState } from "react";
+// import { isUserLogin } from "../../../utilis/user";
+// import axios from 'axios'
 
 const SignIn = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-  const [action, setAction] = useState("Login");
-
-  const { navigate } = useNavigation();
-
-  const handleEmail = (event) => {
-    setEmail(event.target.value)
-  };  
-
-  const handlePassword = (event) => {
-    setPassword(event.target.value)
-  };  
-
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [error, setError] = useState(null);
-
-  const handleLogin = async () => {
-    setIsSubmitting(true);
-    const formData = { 
-      username: email, 
-      password
-    };
-
+  const [email, setEmail] =
+  useState("");
+  const[password, setPassword]=
+  useState("");
+  // const [loggedIn, setLoggedIn] = useState (false);
+  //  const history = useHistory();
+  const handleLogin = async (e) =>
+  {
+    e.preventDefault();
     try {
-      const response = await fetch("https://bluwark-project-b8ax.onrender.com/bluwark/v1/signin", {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData)
-      });
-
-      const data = await response.json();
-      if (response.status >= 400) {
-        setError("An error occurred while logging in.");
-        toast.error("An error occurred while logging in.");
-      } else {
-        console.log("Login success:", data);
-        localStorage.setItem('user', JSON.stringify(data));
-        // Replace the navigate('dashboard') with your routing logic
-      }
+      const response = await fetch ('https://bluwark-project-b8ax.onrender.com/bluwark/v1/signin', {
+        method:'POST',
+      headers:{
+        'Content-Type' : 'application/json'
+      },
+      body:
+      JSON.stringify({email, password})
+    });
+    if (!response.ok){
+      throw new
+      Error('Network response was not ok');
+    }
+      const data =await response.json();
+      console.log (data);
+      // history.push ('/BulwarkLanding');
     } catch (error) {
-      console.error("Login error:", error);
-      setError("An error occurred while logging in.");
-      toast.error("An error occurred while logging in.");
-    }
-
-    setIsSubmitting(false);
+      // setError ('Invalid email or password');
+      console.error ('There was a problem with the fetch operation:',error);
+    } 
   };
-
-  useEffect(()=>{
-    const user = isUserLogin();
-    if (user) {
-      // window.location.href = routes.BulwarkLanding();
-    }
-  }, []);
-
+  
+   
+    
   return (
     <div className={style.background}>
       <div className={style.logo_container}>
@@ -296,48 +277,58 @@ const SignIn = () => {
       <div className={style.signin_image}>
         <main className={style.SignIncontainer}>
           <div className={style.headerpassage}>
-            <h2>{action}</h2>
+            <h2>{style.action}</h2>
           </div>
           <div className={style.forms}>
-            <form onSubmit={handleLogin}>
+            <form onSubmit={handleLogin}
+              >
+               
               <CustomInputField
-                label="Email Address"
-                type="text"
+                label="Email"
+                type="email"
                 placeholder="Enter Email Address"
                 value={email}
-                onChange={handleEmail}
-              />
+                onChange={(e)=> setEmail(e.target.value)} required/>
+                
+                {/* // onChange={handleEmail} */}
+              
               <CustomInputField
                 label="Password"
                 type="password"
                 placeholder="Enter Password"
                 value={password}
-                onChange={handlePassword}
-              />
+                onChange={(e)=> setPassword(e.target.value)} required/>
+               
+                {/* // value={password} */}
+                {/* // onChange={handlePassword} */}
+              
             </form>
           </div>
           <br />
           <span className={style.forgot}>
             <a
               href="#/"
-              className={
-                action === "forgot Password" ? "submit gray" : "submit"
+              className={style.action === "forgot Password" ? "submit gray" : "submit"
               }
             >
               <Link to={"/forgotpassword"}> Forgot password? </Link>
             </a>
           </span>
           <br />
-          <Link to={"/BulwarkLanding"}>
-            <CustomButton
-              className={action === "Sign in" ? "submit gray" : "submit"}
-              onClick={handleLogin}
-              disabled={isSubmitting}
-            >
-              Login
-            </CustomButton>
-          </Link>
-          <br />
+           
+          <CustomButton onClick={handleLogin}className={style.action}>
+            Login
+        </CustomButton>
+       
+            {/* <CustomButton */}
+              {/* // className={style.action === "Sign in" ? "submit gray" : "submit"} */}
+              {/* // onClick={handleLogin} */}
+              {/* // disabled={isSubmitting} */}
+            {/* > */}
+      
+            {/* </CustomButton> */}
+          
+           <br /> 
           <div className={style.alternativeLogin}>
             <br />
             <h3 className={style.signin}>
@@ -345,7 +336,7 @@ const SignIn = () => {
               <span>
                 <a
                   href="#/"
-                  className={action === "Sign Up" ? "submit gray" : "submit"}
+                  className={style.action === "Sign Up" ? "submit gray" : "submit"}
                 >
                   <Link to={"/signup"}>Sign Up</Link>
                 </a>
@@ -356,9 +347,14 @@ const SignIn = () => {
             <br />
             <div className={style.socialIcons}>
               <a href="https://accounts.google.com/">
-                <FcGoogle className={style.google} onClick={() => navigate('home')}/>
+                <FcGoogle className={style.google} 
+                // onClick={() => navigate('home')}/>
+                ></FcGoogle>
               </a>
-              <FaApple className={style.facebook} onClick={() => navigate('home')}/>
+              <FaApple className={style.facebook} 
+              // onClick={() => navigate('home')}/>
+            >
+              </FaApple>
             </div>
           </div>
         </main>
