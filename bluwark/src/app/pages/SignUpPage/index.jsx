@@ -174,6 +174,7 @@ import Button from "../../components/Button/index";
 import { CustomInputField } from "../../components/Inputfield/InputField";
 import { Link } from "react-router-dom";
 import {Checkbox} from "../../components/PrivacyPolicyCheckBox/checkkbox";
+import PrivacyPolicyCheckbox from '../../components/PrivacyPolicyCheckBox/data'
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 import SignupImage from "../../components/Assets/images/SignupImage.png";
@@ -189,61 +190,7 @@ export const SignUp = () => {
   const [policyChecked, setPolicyChecked] = useState(false);
 
 
- 
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  
-  //   // Check if first name and last name are filled
-  //   if (!firstname || !lastname) {
-  //     alert("Please fill in your first and last name");
-  //     return;
-  //   }
-  
-  //   // Check if password and confirm password match
-  //   if (password !== confirmpassword) {
-  //     alert("Password and Confirm Password must match");
-  //     return;
-  //   }
-  
-  //   // Check if privacy policy is accepted
-  //   if (!policyChecked) {
-  //     alert("Please accept the Privacy Policy");
-  //     return;
-  //   }
-  
-  //   try {
-  //     const formData = {
-  //       id,
-  //       firstname,
-  //       lastname,
-  //       email,
-  //       company,
-  //       password,
-  //     };
-  
-  //     const response = await fetch(
-  //       "https://bluwark-project-b8ax.onrender.com/bluwark/v1/signup",
-  //       {
-  //         method: "POST",
-  //         headers: {
-  //           "Content-Type": "application/json",
-  //         },
-  //         body: JSON.stringify(formData),
-  //       }
-  //     );
-  
-  //     if (!response.ok) {
-  //       const errorData = await response.json();
-  //       throw new Error(errorData.message || "Failed to sign up");
-  //     }
-  
-  //     alert("Sign up successful!");
-  //     // Optionally redirect the user to the login page or any other page
-  //   } catch (error) {
-  //     alert(error.message || "Failed to sign up");
-  //   }
-  // };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -366,8 +313,8 @@ export const SignUp = () => {
               <div className={style.checkbox}>
                 <Checkbox
                   label="I agree to all the Terms and Privacy Policies"
-                  checked={policyChecked}
-                  onChange={handlePolicyChange}
+                  // checked={policyChecked}
+                  // onChange={handlePolicyChange}
                 />
               </div>
 
@@ -415,7 +362,7 @@ export const SignUp = () => {
           </div>
         </aside>
         <div>
-        <img className={style.sideimage} src={SignupImage} alt="signup_image" />
+        <img src={SignupImage} className={style.sideimage}  alt="signup_image" />
         </div>
       </section>
     </main>
