@@ -26,47 +26,31 @@ import {BulwarkAboutUs} from './app/pages/BulwarkAboutUs'
 // import IsProtectedRoute from './IsProtectedRoute';
 
 // import {BulwarkAboutUs} from './app/pages/BulwarkAboutUs';
+import {BulwarkAboutUs} from './app/pages/BulwarkAboutUs';
+import ProductPage from "./app/pages/ProductPage";
 
 
  function App() {
   return (
 
-    <div>
-
-
-    <BrowserRouter>
-      <Routes>
- 
-        <Route index element={<BulwarkLanding />} />
-        <Route path="signin" element={<SignIn />} />
-        <Route path="verifyemail" element={<VerifyEmail />} />
-        <Route path="accountconfirm" element={<AccountConfirm />} />
-        <Route path="signup" element={<SignUp/>} />
-        <Route path="ForgotPassword" element={<ForgotPassword/>} />
-
-        
-        <Route path="privacypolicy" element={<PrivacyPolicy/>} />
-       
-        
-
-        <Route path="BulwarkLanding/" element={<BulwarkLanding />} />
-        <Route path="BulwarkAboutUs/" element={<BulwarkAboutUs />} />
-
-      
-        
-        
-         <Route path="bulwarklanding/" element={<BulwarkLanding />} />
-
-         <Route path="BulwarkAboutUs/" element={<BulwarkAboutUs />} />
-
-
-
-      
-            </Routes>
-       </BrowserRouter>
-       </div>
-
+   
   
+		<div>
+			<BrowserRouter>
+				<Routes>
+					<Route index element={<BulwarkLanding />} />
+					<Route path="signin" element={<SignIn />} />
+					<Route path="verifyemail" element={<VerifyEmail />} />
+					<Route path="accountconfirm" element={<AccountConfirm />} />
+					<Route path="signup" element={<SignUp />} />
+					<Route path="ForgotPassword" element={<ForgotPassword />} />
+					<Route path="privacypolicy" element={<PrivacyPolicy />} />
+					<Route path="productpage" element={<ProductPage />} />
+					<Route path="BulwarkAboutUs/" element={<BulwarkAboutUs />} />
+				</Routes>
+			</BrowserRouter>
+		</div>
+
   );
 }
 export default App
