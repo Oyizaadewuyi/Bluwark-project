@@ -64,7 +64,7 @@ export const GetInTouch = () => {
             
             <input
               type="email"
-              value={formData.email}
+              // value={formData.email}
               onChange={handleChange}
               required
               placeholder='Your Email Address'
@@ -73,7 +73,7 @@ export const GetInTouch = () => {
           <div className={style.formGroup}>
             
             <textarea
-              value={formData.message}
+              // value={formData.message}
               onChange={handleChange}
               required
               placeholder='Your Message'
