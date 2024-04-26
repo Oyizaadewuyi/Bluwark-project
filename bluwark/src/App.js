@@ -7,53 +7,35 @@ import AccountConfirm from "./app/pages/AccountConfirmation/AccountConfirm";
 import{ SignUp} from "./app/pages/SignUpPage/index";
 import { ForgotPassword } from "./app/pages/ForgotPassword";
 import { BulwarkLanding } from './app/pages/BulwarkLanding';
-import { PrivacyPolicy } from "./app/pages/PrivacyPolicy";
+import { PrivacyPolicy } from "./app/pages/PrivacyPolicy";import Quiz from "./app/pages/Quiz/index";
+import Test from "./app/pages/test2";
+import Quiz from "./app/pages/Quiz/index";
 
 
 import {BulwarkAboutUs} from './app/pages/BulwarkAboutUs';
-import Quiz from "./app/pages/Quiz/index";
-import Test from "./app/pages/test2";
 import ProductPage from "./app/pages/ProductPage";
 
 
 
  function App() {
   return (
-
-    <div>
-
-
-    <BrowserRouter>
-      <Routes>
- 
-        <Route index element={<SignIn />} />
-        <Route path="signin" element={<SignIn />} />
-        <Route path="verifyemail" element={<VerifyEmail />} />
-        <Route path="accountconfirm" element={<AccountConfirm />} />
-        <Route path="signup" element={<SignUp/>} />
-        <Route path="ForgotPassword" element={<ForgotPassword/>} />
-
-        
-        <Route path="privacypolicy" element={<PrivacyPolicy/>} />
-       
-        
-
-        <Route path="bulwarkLanding/" element={<BulwarkLanding />} />
-
-        <Route path="BulwarkAboutUs/" element={<BulwarkAboutUs />} />
-        <Route path="quiz/" element={<Quiz />} />
+		<div>
+			<BrowserRouter>
+				<Routes>
+					<Route index element={<BulwarkLanding />} />
+					<Route path="signin" element={<SignIn />} />
+					<Route path="verifyemail" element={<VerifyEmail />} />
+					<Route path="accountconfirm" element={<AccountConfirm />} />
+					<Route path="signup" element={<SignUp />} />
+					<Route path="ForgotPassword" element={<ForgotPassword />} />
+					<Route path="privacypolicy" element={<PrivacyPolicy />} />
+					<Route path="productpage" element={<ProductPage />} />
+					<Route path="BulwarkAboutUs/" element={<BulwarkAboutUs />} />
+          <Route path="quiz/" element={<Quiz />} />
         <Route path="Test/" element={<Test />} />
-        <Route path="ProductPage/" element={<ProductPage/>} />
-        
-
-
-
-
-      
-            </Routes>
-       </BrowserRouter>
-
-    </div>
+				</Routes>
+			</BrowserRouter>
+		</div>
   );
 }
 export default App

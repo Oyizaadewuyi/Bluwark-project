@@ -54,7 +54,7 @@
   .List .list .item .description {
     font-size: 16px;
     text-align: start;
-    margin-top: -8%;
+    /* margin-top: -5%; */
     color: #5E5E5E;
     
 }
