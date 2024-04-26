@@ -7,7 +7,7 @@ import AccountConfirm from "./app/pages/AccountConfirmation/AccountConfirm";
 import{ SignUp} from "./app/pages/SignUpPage/index";
 import { ForgotPassword } from "./app/pages/ForgotPassword";
 import { BulwarkLanding } from './app/pages/BulwarkLanding';
-import { PrivacyPolicy } from "./app/pages/PrivacyPolicy";import Quiz from "./app/pages/Quiz/index";
+import { PrivacyPolicy } from "./app/pages/PrivacyPolicy";
 import Test from "./app/pages/test2";
 import Quiz from "./app/pages/Quiz/index";
 
@@ -20,6 +20,7 @@ import ProductPage from "./app/pages/ProductPage";
  function App() {
   return (
 		<div>
+      
 			<BrowserRouter>
 				<Routes>
 					<Route index element={<BulwarkLanding />} />

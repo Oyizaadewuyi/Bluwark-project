@@ -3,7 +3,7 @@ import EradicateScam from "../../components/EradicateScam";
 import EliminateFraud from "../../components/EliminateFraud";
 import HeaderPage from "../../components/BulwarkHomePage/HeaderPage";
 import { Scan } from "../../components/productpageComponent/linkscan";
-import malwareImage from "../../components/Assets/images/malwareImage.png";
+
 
 const ProductPage = () => {
   return (
@@ -14,7 +14,7 @@ const ProductPage = () => {
         <EliminateFraud />
         <br />
         <Scan />
-        <img src={malwareImage} alt="malwareImage" />
+       
       </div>
     </div>
   );
