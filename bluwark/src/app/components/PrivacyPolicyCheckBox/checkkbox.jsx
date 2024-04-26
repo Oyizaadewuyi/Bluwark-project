@@ -1,7 +1,7 @@
 
 import style from "./style.module.css";
 
-export const Checkbox = ({ label, checked, onChange }) => {
+export const CustomCheckbox = ({ label, checked, onChange }) => {
   return (
     <label className={style.checkboxLabel}>
       <input

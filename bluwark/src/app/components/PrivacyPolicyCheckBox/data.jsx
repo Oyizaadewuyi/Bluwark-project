@@ -1,4 +1,4 @@
-import { Checkbox } from "./checkkbox";
+import { CustomCheckbox } from "./checkkbox";
 import React, { useState } from "react";
 import style from "./style.module.css";
 
@@ -16,12 +16,12 @@ const PrivacyPolicyCheckbox = () => {
   
     return (
       <div className={style.checkboxContainer}>
-        <Checkbox
+        < CustomCheckbox
           label="I understand and agree that my personal data will be collected and processed according to the Privacy policies and unconditionally agree and accept the Terms of use"
           checked={privacyChecked}
           onChange={handlePrivacyChange}
         />
-        <Checkbox
+        < CustomCheckbox
           label="Please send me information about new product releases, price changes, and special offers from Bulwark. I am aware that my consent could be revoked at any time by clicking the unsubscribe link inside any email received from Bulwark."
           checked={marketingChecked}
           onChange={handleMarketingChange}

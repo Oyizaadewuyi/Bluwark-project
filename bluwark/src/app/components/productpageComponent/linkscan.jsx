@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import styles from './style.module.css'
 
@@ -20,25 +21,22 @@ export const Scan = ({ title, description, buttonText, onSubmit }) => {
   return (
     <section className={styles.scan}>
         <div className={styles.scancontent}>
-      <h5>Find out instantly if your identity has been exposed</h5>
-      <p>We’ll scan to see if your email has been compromised in a data breach.</p>
+      <h5>Eliminate Digital Scam</h5>
+      <p>Our Bulwark AI feature helps to identify and eliminate digital scams just by pasting links to website on the field below.</p>
+      <br />
       <form onSubmit={handleSubmit} className={styles.emailform}>
         <input
           type="email"
-          placeholder="Enter email"
+          placeholder="Link"
           value={email}
           onChange={handleChange}
           required
 />
-<button type="submit" className={styles.scanbtn}>Scan Now</button>
+<button type="submit" className={styles.scanbtn}>Generate</button>
         
       </form>
     </div>
     </section>
   );
 }
-
-
-
-
 

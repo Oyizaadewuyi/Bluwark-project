@@ -1,0 +1,37 @@
+.fraudtextcontainer{
+    background-color: #ffff;
+    width: 800px;
+    height: min-content;
+    padding: 20px;
+
+    position: relative;
+    left: 390px;
+    top: 70px;
+}
+.fraudtextcontainer{
+    font-size: 64px;
+   
+
+}
+.passage{
+    font-size: 24px;
+    text-align: left;
+    padding: 25px 50px;
+    
+}
+.fraudimagecontainer{
+    position: absolute;
+    top: 1340px;
+    
+}
+.btn{
+    /* right: 1000px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 11em;
+
+    position: relative;
+    left: 540px;
+    
+}

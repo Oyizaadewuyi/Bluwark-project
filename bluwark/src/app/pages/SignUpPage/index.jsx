@@ -173,8 +173,7 @@ import style from "./style.module.css";
 import Button from "../../components/Button/index";
 import { CustomInputField } from "../../components/Inputfield/InputField";
 import { Link } from "react-router-dom";
-import {Checkbox} from "../../components/PrivacyPolicyCheckBox/checkkbox";
-import PrivacyPolicyCheckbox from '../../components/PrivacyPolicyCheckBox/data'
+import { CustomCheckbox} from "../../components/PrivacyPolicyCheckBox/checkkbox";
 import { FcGoogle } from "react-icons/fc";
 import { FaApple } from "react-icons/fa";
 import SignupImage from "../../components/Assets/images/SignupImage.png";
@@ -193,6 +192,7 @@ export const SignUp = () => {
 
 
   const handleSubmit = async (e) => {
+    
     e.preventDefault();
   
     // Check if first name, last name, and email address are filled
@@ -311,7 +311,7 @@ export const SignUp = () => {
               </div>
 
               <div className={style.checkbox}>
-                <Checkbox
+                <CustomCheckbox
                   label="I agree to all the Terms and Privacy Policies"
                   // checked={policyChecked}
                   // onChange={handlePolicyChange}
