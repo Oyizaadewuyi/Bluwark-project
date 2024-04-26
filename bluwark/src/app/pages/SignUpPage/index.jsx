@@ -1,22 +1,17 @@
-// import React, { useState } from "react";
-
-import React, { useState } from 'react';
-import axios from 'axios'; // assuming you are using Axios for HTTP requests
-// import { useHistory } from 'react-router-dom';
+import axios from 'axios'; 
 import { Link } from 'react-router-dom';
-
-
-
-
-
-
-
 import React, { useState } from "react";
-
 import style from "./style.module.css";
 import Button from "../../components/Button/index";
 import { CustomInputField } from "../../components/Inputfield/InputField";
 import { useNavigate } from 'react-router-dom';
+// import { Link } from "react-router-dom";
+import {Checkbox} from "../../components/PrivacyPolicyCheckBox/checkkbox";
+import { FcGoogle } from "react-icons/fc";
+import { FaXTwitter } from 'react-icons/fa6';
+import { FaFacebookF } from 'react-icons/fa';
+import Image2 from "../../components/Assets/images/SignupImage.png";
+
 
 
 
@@ -184,9 +179,7 @@ export const SignUp = () => {
   {loading ? 'Signing Up...' : 'Create Account'}
 </button>
 
-             {/* <button type='submit' className={style.signupBtn} disabled={loading}>
-              {loading ? 'Signing Up...' : 'Create Account'}
-            </button> */}
+             
           </form> 
         </div>
 
@@ -204,416 +197,25 @@ export const SignUp = () => {
                   
                  </Link>
              </span>
-           
+             </h3>
 
-import { Link } from "react-router-dom";
-import {Checkbox} from "../../components/PrivacyPolicyCheckBox/checkkbox";
-import { FcGoogle } from "react-icons/fc";
-import { FaApple } from "react-icons/fa";
-import SignupImage from "../../components/Assets/images/SignupImage.png";
+             <h5 className={style.signupicons}>Or Sign up with</h5>
+             <br />
 
-export const SignUp = () => {
-  const [id, setId] = useState("");
-  const [firstname, setFirstname] = useState("");
-  const [lastname, setLastname] = useState("");
-  const [email, setEmail] = useState("");
-  const [company, setCompany] = useState("");
-  const [password, setPassword] = useState("");
-  const [confirmpassword, setConfirmPassword] = useState("");
-  const [policyChecked, setPolicyChecked] = useState(false);
-
-
- 
-
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  
-  //   // Check if first name and last name are filled
-  //   if (!firstname || !lastname) {
-  //     alert("Please fill in your first and last name");
-  //     return;
-  //   }
-  
-  //   // Check if password and confirm password match
-  //   if (password !== confirmpassword) {
-  //     alert("Password and Confirm Password must match");
-  //     return;
-  //   }
-  
-  //   // Check if privacy policy is accepted
-  //   if (!policyChecked) {
-  //     alert("Please accept the Privacy Policy");
-  //     return;
-  //   }
-  
-  //   try {
-  //     const formData = {
-  //       id,
-  //       firstname,
-  //       lastname,
-  //       email,
-  //       company,
-  //       password,
-  //     };
-  
-  //     const response = await fetch(
-  //       "https://bluwark-project-b8ax.onrender.com/bluwark/v1/signup",
-  //       {
-  //         method: "POST",
-  //         headers: {
-  //           "Content-Type": "application/json",
-  //         },
-  //         body: JSON.stringify(formData),
-  //       }
-  //     );
-  
-  //     if (!response.ok) {
-  //       const errorData = await response.json();
-  //       throw new Error(errorData.message || "Failed to sign up");
-  //     }
-  
-  //     alert("Sign up successful!");
-  //     // Optionally redirect the user to the login page or any other page
-  //   } catch (error) {
-  //     alert(error.message || "Failed to sign up");
-  //   }
-  // };
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-  
-    // Check if first name, last name, and email address are filled
-    if (!firstname || !lastname || !email) {
-      alert("Please fill in your first name, last name, and email address");
-      return;
-    }
-  
-    // Check if password and confirm password match
-    if (password !== confirmpassword) {
-      alert("Password and Confirm Password must match");
-      return;
-    }
-  
-    // Check if privacy policy is accepted
-    if (!policyChecked) {
-      alert("Please accept the Privacy Policy");
-      return;
-    }
-  
-    try {
-      const formData = {
-        id,
-        firstname,
-        lastname,
-        email,
-        company,
-        password,
-      };
-  
-      const response = await fetch(
-        "https://bluwark-project-b8ax.onrender.com/bluwark/v1/signup",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(formData),
-        }
-      );
-  
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.message || "Failed to sign up");
-      }
-  
-      alert("Sign up successful!");
-      // Optionally redirect the user to the login page or any other page
-    } catch (error) {
-      alert(error.message || "Failed to sign up");
-    }
-  };
-  
-
-
-  return (
-    <main className={style.background}>
-      <br />
-      <section className={style.signup_image}>
-        <aside className={style.SignUpcontainer}>
-          <div className={style.headerpassage}>
-            <h2>Sign Up</h2>
-          </div>
-
-          <div className={style.forms}>
-            <form onSubmit={handleSubmit}>
-              <div className={style.nameforms}>
-                <CustomInputField
-                  label="First Name"
-                  type="text"
-                  placeholder="Enter First Name"
-                  value={firstname}
-                  onChange={(e) => setFirstname(e.target.value)}
-                />
-                <CustomInputField
-                  label="Last Name"
-                  type="text"
-                  placeholder="Enter Last Name"
-                  value={lastname}
-                  onChange={(e) => setLastname(e.target.value)}
-                />
-              </div>
-
-              <div className={style.email_company}>
-                <CustomInputField
-                  label="Email Address"
-                  type="text"
-                  placeholder="Enter Email Address"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
-                <CustomInputField
-                  label="Company Name"
-                  type="text"
-                  placeholder="Enter company name"
-                  value={company}
-                  onChange={(e) => setCompany(e.target.value)}
-                />
-              </div>
-
-              <div className={style.nameforms}>
-                <CustomInputField
-                  label="Password"
-                  type="password"
-                  placeholder="Enter Password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                />
-                <CustomInputField
-                  label="Confirm Password"
-                  type="password"
-                  placeholder="Enter Password"
-                  value={confirmpassword}
-                  onChange={(e) => setConfirmPassword(e.target.value)}
-                />
-              </div>
-
-              <div className={style.checkbox}>
-                <Checkbox
-                  label="I agree to all the Terms and Privacy Policies"
-                  checked={policyChecked}
-                  onChange={handlePolicyChange}
-                />
-              </div>
-
-              <br />
-              {/* <Link to={"/BulwarkLanding"}>
-            <Button
-              className={action === "Sign in" ? "submit gray" : "submit"}
-              onClick={handleLogin}
-              disabled={isSubmitting}
-            >
-              Login
-            </Button> */}
-
-            <Button
-            onClick={() => {}}
-          >
-            Create Account
-          </Button>
-
-          
-            </form>
-          </div>
-
-          <br />
-          <div className={style.alternativeLogin}>
-            <h3 className={style.login}>
-              Already have an account?{" "}
-              <span>
-                <Link to={"/signin"} className="submit">
-                    Login
-                </Link>
-              </span>
-            </h3>
-
-
-            <h5 className={style.signupicons}>Or Sign up with</h5>
-            <br />
-
-            <div className={style.socialIcons}>
-            <FcGoogle className={style.google}/>
-            <FaXTwitter />
-             <FaFacebookF className={style.facebook}/>
+             <div className={style.socialIcons}>
+             <FcGoogle className={style.google}/>
+             <FaXTwitter />
+              <FaFacebookF className={style.facebook}/>
            </div>
 
-     </div>
+      </div>
          </aside>
-        <div>
+         <div>
            <img className={style.sideimage} src={Image2} alt="signup_image" />
-         </div>
-       </section>
+          </div>
+        </section>
     </main>
   );
- };
-
-
-
-
-    
-  
-//     <main className={style.background}>
-      
-//          <img src={Logo} className={style.logoicon} alt="logo" />
-//         <Logo className={style.logoicon}/> 
-   
-//       <br />
-//      <section className={style.signup_image}>
-//        <aside className={style.SignUpcontainer}>
-//           <div className={style.headerpassage}>
-//             <h2>{style.action}</h2>
-//           </div>
-
-// //           <div className={style.forms}>
-//               <form onSubmit={handleSubmit}>
-
-//               <div className={style.nameforms}>
-              
-
-//               <CustomInputField
-      
-//                 label="First Name"
-//                type="text"
-//                 id="firstname-input"
-//                 placeholder="Enter First Name"
-//                 value={formData.firstname}
-//                 onChange={handleChange}
-//                 required
-//                  />
-//               <CustomInputField
-//                 label="Last Name"
-//                 type="text"
-//                 id="lastname-input"
-//                 placeholder="Enter Last Name"
-//                  value={formData.lastname}
-//                 onChange={handleChange}
-//                 required
-//                 />
-//             </div>
-
+  };
            
-//              <div className={style.email_company}>
-//               <CustomInputField
-//                label="Email address"
-//                 type="email"
-//                 id="email-input"
-//                 placeholder="Enter your Email"
-//                 value={formData.Email}
-//                onChange={handleChange}
-//                required
-//                 /> 
-//               <CustomInputField
-//                 label="Company Name"
-//                 type="text"
-//                 id="company-input"
-//                 placeholder="Enter company name"
-//                  value={formData.company}
-//                  onChange={handleChange}
-//                 required
-//                 />
-//             </div>
-
-//             <div className={style.nameforms}>
-//                            <CustomInputField
-//                 label="Password"
-//                 type="Password"
-//                 id="Passwordinput"
-//                 placeholder="Enter Password"
-//                 value={formData.Password}
-//                 onChange={handleChange}
-//                 required
-//              />
-//               <CustomInputField
-//                 label="Confirm Password"
-//                 type="password"
-//                 id="confirmpassword-input"
-//                 placeholder="Confirm Password"
-//                  value={formData.confirmpassword}
-//                 onChange={handleChange}
-//                 required
-//               />
-//           </div>
-              
-               
-              
-//                <div className={style.checkbox}>
-//           <input  type="checkbox" name="" id="checkboxs" /><p>I agree to all the Terms and Privacy Policies</p>
-//         </div>
-//             </form>
-          
-//          </div>
-        
-// <br />
-//           {/* <Button
-//             className={style.action === "Login" ? "submit gray" : "submit"}
-//             onClick={() => {}}
-//           >
-//             Create Account
-//           </Button> */}
-//           <button type="submit" disabled={loading}>
-//         {loading ? 'Signing Up...' : 'Create Account'}
-//       </button>
-    
-
-          
-//    <div className={style.alternativeLogin}>
-      
-//      <h3 className={style.login}>
-//            Already have an account?{" "}
-//             <span>
-//             <Link to={"/signin"}>
-//                     className={style.action === "Sign Up" ? "submit gray" : "submit"}
-                  
-//                     Login
-                  
-//                  </Link>
-//              </span>
-           
-
-//           </h3>
-          
-//           <h5 className={style.signupicons}>Or Sign up with</h5>
-//           <br />
-
-//           <div className={style.socialIcons}>
-//             <FcGoogle className={style.google}/>
-//             <FaXTwitter />
-//              <FaFacebookF className={style.facebook}/>
-//            </div>
-
-//      </div>
-//          </aside>
-//         <div>
-//            <img className={style.sideimage} src={Image2} alt="signup_image" />
-//          </div>
-//        </section>
-//     </main>
-//   );
-//  };
-
-
-
-         <br />
-         
-            <FaApple  className={style.facebook}/>
-          </div>
-
-          </div>
-        </aside>
-        <div>
-        <img className={style.sideimage} src={SignupImage} alt="signup_image" />
-        </div>
-      </section>
-    </main>
-  );
-};
 

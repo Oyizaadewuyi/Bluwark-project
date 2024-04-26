@@ -32,7 +32,7 @@
 
 .cardContainer {
     width: 200px; /* Set width */
-    height: 300px; /* Set height */
+    height: 310px; /* Set height */
     border: 1px solid #aaaadc; /* Add border */
     background-color: #E0E0FD; /* Set background color */
     padding: 20px; /* Add padding */
@@ -45,11 +45,13 @@
   }
 
   
-.Services .list .item img {
-    width: 240px;
-    height: 200px;
-    margin-top: -30%;
-    }
+ .Services .list .item img {
+    display: flex;
+    justify-content: center;
+    width: 350px;
+    height: 150px;
+    /* margin-top: -20%; */
+    } 
 
 
 .Services .list .item .title {

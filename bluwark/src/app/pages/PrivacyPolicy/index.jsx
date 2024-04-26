@@ -5,7 +5,7 @@ import { PolicyAgreement } from "../../components/policyAgreement/data";
 
 import { CustomFooter, Footer } from "../../components/Footer/Footer";
 // import Button from "../../components/Button";
-import { CustomFooter } from "../../components/Footer/Footer";
+// import { CustomFooter } from "../../components/Footer/Footer";
 import PrivacyPolicyCheckbox from "../../components/PrivacyPolicyCheckBox/data";
 import Button from "../../components/Button";
 
@@ -38,7 +38,7 @@ export const PrivacyPolicy = () => {
           <CustomFooter />
         </div>
       </section>
-      {/* <Footer /> */}
+       {/* <Footer />  */}
         
     </main>
   );
