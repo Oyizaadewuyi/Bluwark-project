@@ -1,4 +1,4 @@
-import logo from "../Assets/icons/Bulwarklogo.svg";
+import Logo from "../Assets/icons/Bulwarklogo.svg";
 import React from "react";
 import "./HeaderPage.css";
 
@@ -11,7 +11,7 @@ const HeaderPage = () => {
  <nav>
          <div className="logo">
             
-            <img src={logo} alt=""  />
+            <img src={Logo} alt=""  />
             </div>
           
          <ul className="nav-bar">
