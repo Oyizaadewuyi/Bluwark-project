@@ -17,6 +17,7 @@ input {
     width: 450px;
     height: 30px;
     background-color: transparent;
+    border: 1px solid blue;
     /* border: 1px solid #E0E0Fd; */
 }
 
@@ -24,6 +25,7 @@ textarea{
     width: 450px;
     height: 150px;
     background-color: transparent;
+    border: 1px solid blue;
     /* border: 1px solid #E0E0Fd; */
 }
 
