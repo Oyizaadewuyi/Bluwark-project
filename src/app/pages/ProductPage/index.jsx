@@ -3,6 +3,7 @@ import EradicateScam from "../../components/EradicateScam";
 import EliminateFraud from "../../components/EliminateFraud";
 import HeaderPage from "../../components/BulwarkHomePage/HeaderPage";
 import { Scan } from "../../components/productpageComponent/linkscan";
+import ScamChecker from "../../components/productpageComponent/scanChecker";
 
 
 const ProductPage = () => {
@@ -13,8 +14,8 @@ const ProductPage = () => {
         <EradicateScam />
         <EliminateFraud />
         <br />
-        <Scan />
-       
+        {/* <Scan /> */}
+       <ScamChecker/>
       </div>
     </div>
   );
