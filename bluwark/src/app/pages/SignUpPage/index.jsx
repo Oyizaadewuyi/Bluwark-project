@@ -91,7 +91,7 @@ export const SignUp = () => {
     <main className={style.background}>
     <br />
     <section className={style.signup_image}>
-      <aside className={style.SignUpcontainer}>
+      <aside className={style.signUpcontainer}>
         <div className={style.headerpassage}>
           <h2>{style.action}</h2>
         </div>

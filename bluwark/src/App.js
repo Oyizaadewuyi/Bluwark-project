@@ -1,13 +1,13 @@
 
 import React from "react";
-import SignIn from "./app/pages/SignInPage/SignIn";
 import { BrowserRouter, Routes , Route} from 'react-router-dom'
+import SignIn from "./app/pages/SignInPage/SignIn";
 import VerifyEmail from "./app/pages/VerifyEmailPage/VerifyEmail";
 import AccountConfirm from "./app/pages/AccountConfirmation/AccountConfirm";
 import{ SignUp} from "./app/pages/SignUpPage/index";
 import { ForgotPassword } from "./app/pages/ForgotPassword";
 import { BulwarkLanding } from './app/pages/BulwarkLanding';
-import { PrivacyPolicy } from "./app/pages/PrivacyPolicy";
+import  {PrivacyPolicy}  from "./app/pages/PrivacyPolicy/index";
 import Test from "./app/pages/test2";
 import Quiz from "./app/pages/Quiz/index";
 

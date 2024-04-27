@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import {quizData} from '../Quiz/data'
+import Button from '../../components/Button';
+
+import style from './style.module.css'
 
 function Quiz() {
   // Quiz data in JSON format
@@ -25,14 +28,15 @@ function Quiz() {
   };
 
   return (
-    <div style={{ backgroundColor: questionBackgroundColor, padding: '20px' }}>
+    <div style={{ backgroundColor: questionBackgroundColor, padding: '20px' }}className={style.container} >
       {currentQuestion < quizData.length ? (
         <div>
-          <h2>Quiz Questions</h2>
-          <div id="question">{quizData[currentQuestion].question}</div>
-          <form id="options">
+          <h2 className={style.header}>Quiz Questions</h2>
+          <div id="question" className={style.question}>{quizData[currentQuestion].question}</div>
+          <br />
+        <form id="options" className={style.options}>
             {quizData[currentQuestion].options.map((option, index) => (
-              <div key={index}>
+              <div key={index} className={style.checkall}>
                 <input
                   type="radio"
                   name="option"
@@ -44,12 +48,15 @@ function Quiz() {
               </div>
             ))}
           </form>
-          <button id="nextButton" onClick={() => setCurrentQuestion(currentQuestion + 1)}>Next</button>
-          <p id="result"></p>
+          <br />
+         <div className={style.resultbtn}>
+         <Button  id="nextButton" className={style.btn} onClick={() => setCurrentQuestion(currentQuestion + 1)} >Next</Button>
+          <p id="result" className={style.result}> {score} of {quizData.length}</p>
+         </div>
         </div>
       ) : (
         <div>
-          <p>You scored {score} out of {quizData.length}</p>
+          <p className={style.score}>You scored {score} out of {quizData.length}</p>
         </div>
       )}
     </div>
