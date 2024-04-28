@@ -27,7 +27,8 @@ const HeaderPage = () => {
             
              <li><a href="/Alert">Alert</a></li>
 
-             <li><a href="/Contact us">Contact us</a></li>
+             <li><a href="/Contact us"> <Link to="/Contact us">Contact us</Link> {/* Use Link instead of <a> */}</a>
+            </li>
 
             
             

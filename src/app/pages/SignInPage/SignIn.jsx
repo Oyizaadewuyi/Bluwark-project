@@ -11,9 +11,11 @@ import CustomButton from "../../components/Button";
  import { Link } from "react-router-dom";
 import Image2 from "../../components/Assets/images/image 2.png";
 import { CustomInputField } from "../../components/Inputfield/InputField";
+import { useNavigate } from 'react-router-dom';
+
 
 const SignIn = () => {
-
+  const navigate=useNavigate()
   const [emailAddress, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
@@ -38,11 +40,15 @@ const SignIn = () => {
       throw new Error('Invalid email or password');
     }
 
+    navigate("/productpage")
+
     const { token } = await response.json();
 
     localStorage.setItem('token', token);
 
-    } catch (error) {
+    } 
+    
+    catch (error) {
     
       setError(error.message);
   }finally {

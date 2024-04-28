@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom';
 import React, { useState } from "react";
 import style from "./style.module.css";
-import Button from "../../components/Button/index";
+
 import { CustomInputField } from "../../components/Inputfield/InputField";
 import { useNavigate } from 'react-router-dom';
 // import { Link } from "react-router-dom";
@@ -99,7 +99,7 @@ export const SignUp = () => {
         </div>
 
         <div className={style.forms}>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit}className={style.signupForm}>
             <div className={style.nameforms}>
               <CustomInputField
                 label="First Name"
