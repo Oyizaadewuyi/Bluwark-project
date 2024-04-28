@@ -11,6 +11,7 @@ export const Testimonials = () => {
         <section className={styles.container}>
             
                 <div className={styles.testimonial}>
+                
             <img src={Quote} alt="" className={styles.Quote}/>
                 
             <p>I have used Bulwark for a few<br/>years. The protection is the<br/> best for the money. I also cover<br/>my phones with Bulwark and I<br/>haven’t had any problems yet.</p>

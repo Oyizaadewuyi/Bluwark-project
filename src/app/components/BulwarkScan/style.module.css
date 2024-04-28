@@ -1,47 +1,71 @@
 .scan {
     background-color: white;
-    border: 1px solid #0D265B;
+    border: 5px solid #0D265B;
     border-radius: 15px;
     margin-top: 10%;
+    width: 65%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    
+    margin-left: 20%;
 }
 
 .emailform {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 10px 15%;
+    padding: 10px 15%; 
   } 
   
   .emailform input {
-  margin-right: 10px;
-  width: 350px;
+  
+  width: 300px;
+  align-items: flex-start;
 
   }
 h5 {
     text-align: center;
     font-size: 26px;
+    font-weight: 700;
+    padding: 20px;
+    
+    
 
 }
 
 p {
     text-align: center;
     font-size: 16px;
+    font-weight: 600;
+}
+
+.linkForm {
+    display: flex;
+    flex-direction: row;
+}
+input{
+    width: 300px;
+    color: #5E5E5E;
+    border: 1px solid #5E5E5E;
+
 }
 
 ::placeholder {
     text-align: start;
-    padding: 10px 5%;
-    margin-right: 5%;
+   
+    
 }
 
-.scanbtn {
+.scanBtn {
     padding: 2px 5%;
    align-items: center;
    background-color: #0050BE;
    border: 1px solid #0050BE;
-   border-radius: 25px;
-   height: 50px;
+   border-radius: 100px;
+   height: 30px;
    color: white;
    font-size: 16px;
-   margin-right: 20%;
+   margin-left: 5%;
+   cursor: pointer;
     }

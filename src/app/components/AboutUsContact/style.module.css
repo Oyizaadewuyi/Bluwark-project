@@ -2,14 +2,20 @@ body {
     background-color: #E0E0FD;
 }
 .getintouch_container {
-    width: 90%;
+    max-width: 100%;
+
     margin-left: 5%;
     padding-top: 5%;
+    margin-left: 6%;
+    border: 5px solid blue;
+    background-color: white;
+    margin-top: 10%;
 }
 .Getin_touch {
     background-color: white;
-    width: 70%;
-    display: flex;
+    width: 90%;
+    height: 50vh;
+    display: flex; 
 
     /* flex-direction: column; */
     /* justify-content: center; */
@@ -17,16 +23,23 @@ body {
     padding: 30px 22%;
 }
 .firstContainer {
-    background-color:#E0E0FD;
-    padding-top: 50px;
-    margin-right: 10px;
-     padding-right: 20px;
-    display: flex; 
+    width: 50%; 
+    height: 45vh;
+    border: 2px solid #E0E0FD;
+    margin-left: -25%;
+    display: flex;
+    flex-direction: row;
+    background-color: #E0E0FD;
+    margin-top: -5%;
+    
 }
 
 .Icons {
+    padding: 10px;
+     display: flex;
+    flex-direction: column;
     padding-left: 15px;
-    font-size: 16px;
+    font-size: 14px;
     color: #0D265B;
 }
 .secondContiner {
@@ -34,6 +47,9 @@ body {
     margin-left: 20px;
     padding-left: 20px;
     height: 50vh;
+    width: 150%;
+    margin-top: -10%;
+    margin-left: 50%;
     
 }
 
@@ -41,30 +57,37 @@ body {
     color:#111111;
     text-align: start;
     font-weight: 500;
-    font-size: 28px;
+    font-size: 20px;
+    margin-top: 5%;
 }
-
+.abtContact {
+    display: flex;
+    flex-direction: column;
+}
 input {
-    width: 400px;
+    width: 250px;
+    height: 40px;
+    margin-top: 5%;
 }
 
 
 
 .formGroup textarea {
-    width:400px;
-    height: 15vh;
+    width:250px;
+    height: 100px;
+    
    }
 
 .getbtn {
     background-color: #0D265B;
     height: 40px;
-    margin-top: -3%;
+    margin-top: 5%;
     color: white;
     border: 1px solid #0D265B;
-    width: 300px;
+    width: 250px;
    text-align: center;
    display: flex;
    justify-content: center;
    align-items: center;
-   margin-left: 10%;
+   
 }

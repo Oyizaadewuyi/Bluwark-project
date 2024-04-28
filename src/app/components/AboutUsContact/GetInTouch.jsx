@@ -52,13 +52,13 @@ export const GetInTouch = () => {
         </div>
 
 
-        <div className={style.secondContiner}>
+         <div className={style.secondContiner}>
             <p className={style.getintouchdesc}>
             Get in touch and leave a message for us
             </p>
 
 
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}className={style.abtContact}>
            
           <div className={style.formGroup}>
             
@@ -70,6 +70,7 @@ export const GetInTouch = () => {
               placeholder='Your Email Address'
             />
           </div>
+          <br/>
           <div className={style.formGroup}>
             
             <textarea
@@ -81,7 +82,7 @@ export const GetInTouch = () => {
           </div>
           <button className={style.getbtn}type="submit">Send Message</button>
         </form>
-        </div>
+        </div> 
         </div>
        
     </section>

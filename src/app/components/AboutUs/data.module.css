@@ -9,7 +9,7 @@
 
 .text_container{
     width: 80%;
-    height: 27vh;
+    height: 30vh;
     background-color: #E0E0FD;
     margin-left: 7%;
     margin-top: 25%;
@@ -20,20 +20,23 @@
     color: #111111;
     font-weight: 700;
     font-size: 30px;
+    
 }
 .text_container p {
     color: #5E5E5E;
     font-family: 16px;
-    margin-top: -10px;
+    margin-top: 10px;
 }
-.text_container button {
+.text_container Button {
     margin-left:45% ;
     background-color: #0D265B;
     color: #E0E0FD;
     border: 1px solid #0D265B;
-    border-radius: 20px;
-    height: 35px;
+    
     padding: 10px 20px;
+    margin-top: 3%;
+    text-align: center;
+    border-radius: 15px;
 }
 
 

@@ -4,16 +4,16 @@ height: 60vh;
       display: flex;
     justify-content: center; 
        align-items: center;  
-      border: 1px solid #0D265B;
+      border: 5px solid #0D265B;
       border-radius: 15px;
-      /* padding: 20px 10%;  */
+      padding: 20px 10%;  
       margin-top: 10%;
       
 }  
 
 
 
-/* .testimonial {
+.testimonial {
     display: flex;
    flex-direction: column;
     align-items: center; 
@@ -22,9 +22,9 @@ height: 60vh;
      text-align: center;
     /* margin-top: 10%; */
     /* padding: 10px 5%; */
-    /* margin-right: 10px; */
-/* }     */
-
+     margin-right: 25px; 
+     border-radius: 5px;
+}
 
 .Quote {
     width: 50px;

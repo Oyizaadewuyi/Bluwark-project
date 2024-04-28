@@ -1,16 +1,27 @@
- .heading {
-    background-color: #f1f1f1;
-        font-size: 14px;
-        padding: 20px 15%;
-        margin-top: 10%;
+ .FaqContainer {
+    width: 70%;
+    border: 5px solid #0D265B;
+    margin-left: 14%;
+    margin-top: 8%;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    padding: 50px;
+ }
+ .heading  {
+    margin-bottom: 10px;
+    
+     
+         
     
 }
  h3 {
-     display: flex;
-    justify-content: space-between;
-    align-items: center; 
+      display: flex;
+    justify-content: space-between; 
+    align-items: center;  
+}
 
-
+.separator {
+    margin-top: 5%;
 }
 
 span {
@@ -20,9 +31,11 @@ span {
     cursor: pointer;
     }
 
-   .steps {
-    font-size: 12px;
-    padding: 0px 5%;
+.step {
+    font-size: 14px;
+    
+    color:#111111;
+    margin-top: 2%;
    }
 
 /* button {

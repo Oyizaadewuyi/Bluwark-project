@@ -3,43 +3,57 @@
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
-    padding: 50px 10%;
+    padding: 100px 20%;
     background-color: #E0E0Fd;
+    width: 100%;
+   
     
 }
 
 
  h2 {
     text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.contactFrm{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 input {
-    width: 450px;
+    width: 350px;
     height: 30px;
     background-color: transparent;
-    border: 1px solid blue;
+    border: 1px solid #0D265B;
     /* border: 1px solid #E0E0Fd; */
 }
 
 textarea{
-    width: 450px;
+    width: 350px;
     height: 150px;
     background-color: transparent;
-    border: 1px solid blue;
+    border: 1px solid #0D265B;
     /* border: 1px solid #E0E0Fd; */
 }
 
    
 .contactbtn{
     align-items: center;
-    width: 400px;
-    height: 50px;
+    width: 350px;
+    height: 40px;
     text-align: center;
     font-size: 18px;
     font-weight: 500;
     color: white;
     cursor: pointer;
-    background-color: #0D265B;
+    background-color: #0050BE;
+    border: 1px solid #0050BE;
+    border-radius: 5px;
+
 } 
 
 .contactimg {
@@ -50,9 +64,10 @@ textarea{
 }
 
 .picture {
-    width: 500px;
-    height: 320px;
-    margin-top: -92%;
-    margin-right: -200%;
+    width: 300px;
+    height: 300px;
+    margin-top: -110%;
+       margin-left: 270%;
+   
 
 }

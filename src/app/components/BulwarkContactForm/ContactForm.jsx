@@ -36,7 +36,7 @@ export const ContactForm = () => {
     <div className={styles.container}>
       <div className={styles.content}>
         <h2>Contact Us</h2>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit}className={styles.contactFrm}>
           <div className="form-group">
             <label htmlFor="name">Full Name</label>
             <br/>

@@ -54,3 +54,14 @@ nav ul li a {
 .Get {
     
 }
+
+@media screen and (max-width: 768px) {
+    .nav-bar {
+      flex-direction: column; /* Stack items vertically */
+    }
+  
+    .nav-bar li {
+      margin-right: 0; /* Remove margin between stacked items */
+      margin-bottom: 10px; /* Add spacing between stacked items */
+    }
+  }

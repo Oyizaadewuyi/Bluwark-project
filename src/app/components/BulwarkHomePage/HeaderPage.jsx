@@ -9,32 +9,31 @@ const HeaderPage = () => {
     
     
      return (
-	 <header className="header">
- <nav>
-         <div className="logo">
-            
-            <img src={Logo} alt=""  />
-            </div>
-          
-         <ul className="nav-bar">
-              <li><a href="/Product">Product</a></li>
-             <li>
-                 <a href="/Features">Features</a>
-             </li>
-             <li>
-                 <a href="/Education">Education</a>
-             </li>
-            
-             <li><a href="/Alert">Alert</a></li>
-
-             <li><a href="/Contact us"> <Link to="/Contact us">Contact us</Link> {/* Use Link instead of <a> */}</a>
+        <header className="header">
+        <nav>
+          <div className="logo">
+            <img src={Logo} alt="" />
+          </div>
+          <ul className="nav-bar">
+            <li>
+              <Link to="/productpage">Product</Link>
             </li>
-
-            
-            
-
-            
-        </ul>
+            <li>
+              <Link to="/Features">Features</Link>
+            </li>
+            <li>
+              <Link to="/Education">Education</Link>
+            </li>
+            <li>
+              <Link to="/privacypolicy">Privacy Policy</Link>
+            </li>
+            <li>
+              <Link to="/quiz">Quiz</Link>
+            </li>
+            <li>
+              <Link to="/bulwarkAboutUs">About us</Link>
+            </li>
+          </ul>
 
        < ul className="links">
        <li className="active">

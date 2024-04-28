@@ -32,9 +32,9 @@
 
 .cardContainer {
     width: 200px; /* Set width */
-    height: 310px; /* Set height */
-    border: 1px solid #aaaadc; /* Add border */
-    background-color: #E0E0FD; /* Set background color */
+    height: 320px; /* Set height */
+    border: 3px solid #E0E0FD; 
+    background-color: transparent; /* Set background color */
     padding: 20px; /* Add padding */
     margin-right: 20px; /* Add right margin */
     border-radius: 10px;
@@ -48,11 +48,11 @@
  .Services .list .item img {
     display: flex;
     justify-content: center;
-    width: 350px;
-    height: 150px;
+    width: 500px;
+    height: 400px;
+    margin-top: -12%;
     /* margin-top: -20%; */
     } 
-
 
 .Services .list .item .title {
     font-size: 14px;
@@ -62,8 +62,9 @@
 }
 
 .Services .list .item .description {
-    font-size: 12px;
-    margin-top: -5%;
+    font-size: 14px;
+    margin-top: -2%;
+    text-align: start;
     
 }
 
@@ -74,6 +75,8 @@
         text-decoration: underline; /* Add underline to text */
     cursor: pointer; /* Change cursor to pointer on hover */
     color: #000000;
+    margin-top: 3%;
+    text-align: start;    
   
     }
 

@@ -1,7 +1,7 @@
 
 import React from "react"
 import styles from './style.module.css'
-import FrameA from '../Assets/images/FrameA.png'
+import FrameZ from '../Assets/images/FrameZ.png'
  import FrameB from '../Assets/images/FrameB.png'
 import FrameC from '../Assets/images/FrameC.png'
 
@@ -13,14 +13,14 @@ import FrameD from '../Assets/images/FrameD.png'
 
 export const Services = () => {
     const Services =[{
-       image: FrameA,
+       image: FrameB,
        title: "Personal Data Cleanup",
        description: "Alerts you when your personal info is found online and helps you remove it, so you can get your data back from sites that sell it.",
       //  learnMoreLink: "/personal-data-cleanup-details", // Add a learnMoreLink for each service
 
       },
     {
-         image: FrameB,
+         image: FrameZ,
          title: "Bulwark Scam Protection",
          description: "With advanced AI, Bulwark detects fraudulent texts and blocks risky websites to prevent scam link risks..",
   },

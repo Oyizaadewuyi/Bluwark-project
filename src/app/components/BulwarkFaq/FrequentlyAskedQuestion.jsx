@@ -31,28 +31,33 @@ export const FrequentlyAskedQuestion = () => {
   };
 
   return (
+    <div className={styles.FaqContainer}>
     <div className={styles.heading} onClick={collapseSteps}>
       {headings.map((heading, index) => (
         <div key={index} className="section" onClick={(e) => e.stopPropagation()}>
           <div className="heading-container" onClick={toggleSteps}>
-            <h3 style={{ color: heading.color }}>{heading.title} <span>{isExpanded ? '−' : '+'}</span>
+            <h3 style={{ color: heading.color }}>{heading.title} <span>{isExpanded ? '' : '+'}</span>
           </h3>
            </div>
           {isExpanded && (
             <ol>
               {heading.steps.map((step, stepIndex) => (
                 <li key={stepIndex}>
-                  <div className="step-item" style={{ backgroundColor: 'white' }}>
+                <div className={`${styles.step} stepitem`} style={{ backgroundColor: 'white' }}>
+
                     {step}
                   </div>
                 </li>
               ))}
             </ol>
           )}
-          {index < headings.length - 1 && <hr className="separator" />} {/* Add a horizontal line if it's not the last heading */}
+          {index < headings.length - 1 && <hr className={styles.separator} />} {/* Add a horizontal line if it's not the last heading */}
         </div>
+        
       ))}
     </div>
+    </div>
+    
   );
 }
 

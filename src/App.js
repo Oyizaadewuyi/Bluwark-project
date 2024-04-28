@@ -31,7 +31,7 @@ import ProductPage from "./app/pages/ProductPage";
 					<Route path="ForgotPassword" element={<ForgotPassword />} />
 					<Route path="privacypolicy" element={<PrivacyPolicy />} />
 					<Route path="productpage" element={<ProductPage />} />
-					<Route path="BulwarkAboutUs/" element={<BulwarkAboutUs />} />
+					<Route path="bulwarkAboutUs/" element={<BulwarkAboutUs />} />
           <Route path="quiz/" element={<Quiz />} />
         <Route path="Test/" element={<Test />} />
 				</Routes>

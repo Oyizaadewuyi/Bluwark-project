@@ -31,8 +31,8 @@
 }
 
 .cardContainer {
-    width: 200px; /* Set width */
-    height: 250px; /* Set height */
+    width: 250px; /* Set width */
+    height: 300px; /* Set height */
     border: 1px solid #aaaadc; /* Add border */
     background-color: #E0E0FD; /* Set background color */
     padding: 20px; /* Add padding */
