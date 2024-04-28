@@ -1,6 +1,8 @@
 import Logo from "../Assets/icons/Bulwarklogo.svg";
 import React from "react";
 import "./HeaderPage.css";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
+
 
 const HeaderPage = () => {
 
@@ -34,7 +36,11 @@ const HeaderPage = () => {
         </ul>
 
        < ul className="links">
-                    <li className='active'><a href="/login">Log In</a></li>
+       <li className="active">
+            <Link to="/SignIn">Log In</Link> {/* Use Link instead of <a> */}
+          </li>
+
+                    {/* <li className='active'><a href="/login">Log In</a></li> */}
                     <li className='Get'><a href="/signup">Get Started</a></li>
                 </ul>
             

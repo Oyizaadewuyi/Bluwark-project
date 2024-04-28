@@ -50,14 +50,22 @@ form {
     
     display: flex;
     flex-direction: row;
+    gap: 10px;
+    margin-left: 2%;
     justify-content: flex-start;
     align-items: flex-start;
     position: relative;
     right: 10px;
     text-wrap: nowrap;
+    height: 10px;
+    width: 10px;
+    margin-top: -2%;
+    font-weight: 400;
     /* background-color: red; */
     
 }
+
+
 
 .alternativeLogin {
     /* background-color: pink; */
@@ -66,6 +74,8 @@ form {
     align-items: center;
     color: #919191;
     font-size: 14px;
+    margin-top: 2%;
+    font-weight: 500;
 
 }
 
@@ -83,15 +93,17 @@ text-align: left;
     justify-content: space-between;
     gap: 100px;
     margin-bottom: 40px;
+
    
 }
-.google, .facebook, .twitter{
+ /* .google, .facebook{
     border: 1px solid rgba(0, 0, 0, 1);
     width: 24px;
     height: 24px;
     padding: 10px 30px;
     border-radius: 4px;
-}
+    background-color: transparent;
+} */
 .sideimage {
     width: 600px;
     /* height: 647.65px; */
@@ -106,15 +118,15 @@ text-align: left;
    color: rgba(71, 71, 71, 0.4);
    
 }
-.signupBtn {
+/* .signupBtn {
     color: white;
-    background-color: blue;
-    width: 600px;
-    height: 7vh;
-    border: 1px solid blue;
-    border-radius: 25px;
-    cursor: pointer;
-}
+    text-align: center;
+    padding-top: 2%;
+    font-size: 16px;
+    border-radius: 15px;
+    width: 450px;
+    margin-top: 3%;
+} */
 /* .sideimage {
     width: 400px;
 } */

@@ -11,6 +11,8 @@ import { FcGoogle } from "react-icons/fc";
 import { FaXTwitter } from 'react-icons/fa6';
 import { FaFacebookF } from 'react-icons/fa';
 import Image2 from "../../components/Assets/images/SignupImage.png";
+import CustomButton from "../../components/Button";
+
 
 
 
@@ -173,12 +175,12 @@ export const SignUp = () => {
 
             <div className={style.checkbox}>
               <input type="checkbox" name="agreeToTerms" id="checkboxs" required />
-              <label htmlFor="checkboxs">I agree to all the Terms and Privacy Policies</label>
+              <label htmlFor="checkboxs"> I agree to all the Terms and Privacy Policies</label>
             </div>
 
-            <button type="submit" className={style.signupBtn} disabled={loading}>
+            <CustomButton type="submit" className={style.signupBtn} disabled={loading}>
   {loading ? 'Signing Up...' : 'Create Account'}
-</button>
+</CustomButton>
 
              
           </form> 
@@ -191,6 +193,7 @@ export const SignUp = () => {
      <h3 className={style.login}>
            Already have an account?{" "}
             <span>
+              
             <Link to={"/signin"}
                     className={style.action === "Sign Up" ? "submit gray" : "submit"}>
                   
@@ -199,14 +202,17 @@ export const SignUp = () => {
                  </Link>
              </span>
              </h3>
+             <br/>
 
              <h5 className={style.signupicons}>Or Sign up with</h5>
              <br />
 
              <div className={style.socialIcons}>
              <FcGoogle className={style.google}/>
-             <FaXTwitter />
+             {/* <FcGoogle /> */}
+             <FaXTwitter/>
               <FaFacebookF className={style.facebook}/>
+              {/* <FaFacebookF/> */}
            </div>
 
       </div>

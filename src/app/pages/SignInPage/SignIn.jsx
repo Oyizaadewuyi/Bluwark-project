@@ -4,6 +4,8 @@
 
 import style from "./style.module.css";
 import { FcGoogle } from "react-icons/fc";
+import { FaFacebookF } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { FaApple } from "react-icons/fa";
 import CustomButton from "../../components/Button";
  import { Link } from "react-router-dom";
@@ -60,7 +62,7 @@ const SignIn = () => {
             <h2>{style.action}</h2>
           </div>
           <div className={style.forms}>
-            <form onSubmit={handleLogin}
+            <form onSubmit={handleLogin} className={style.loginForm}
               >
                
               <CustomInputField
@@ -79,17 +81,8 @@ const SignIn = () => {
                 placeholder="Enter Password"
                 value={password}
                 onChange={(e)=> setPassword(e.target.value)} required/>
-               
-                
-                <button className={style.signinBtn} disabled={loading}>
-              {loading ? 'Logging In...' : 'Login'}
-              
-            </button>
-          
-              
-            </form>
-          </div>
-          <br />
+
+
           <span className={style.forgot}>
             <a
               href="#/"
@@ -99,21 +92,23 @@ const SignIn = () => {
               <Link to={"/forgotpassword"}> Forgot password? </Link>
             </a>
           </span>
-          <br />
+          
 
+          <CustomButton 
+                    className={style.loginBtn} 
+                    onClick={handleLogin}
+                    disabled={loading}
+                    >
+                    Login
+                </CustomButton>
+                
+                
+              
+            </form>
+          </div>
+         
           
            
-          {/* <CustomButton onClick={handleLogin}className={style.action}>
-            Login
-        </CustomButton>
-        */}
-            {/* <CustomButton */}
-              {/* // className={style.action === "Sign in" ? "submit gray" : "submit"} */}
-              {/* // onClick={handleLogin} */}
-              {/* // disabled={isSubmitting} */}
-            {/* > */}
-      
-            {/* </CustomButton> */}
           
            <br /> 
           <div className={style.alternativeLogin}>
@@ -130,18 +125,32 @@ const SignIn = () => {
               </span>
             </h3>
 
-            <h6 className={style.signinicons}>Or log in with</h6>
+            <div className={style.divider}>
+                    <span>Or log in with</span>
+                </div>
+
+            {/* <h6 className={style.signinicons}>Or log in with</h6> */}
             <br />
             <div className={style.socialIcons}>
+            
+            <FcGoogle className={style.google}/>
+             {/* <FcGoogle /> */}
+             <FaXTwitter/>
+              <FaFacebookF className={style.facebook}/>
+              {/* <FaFacebookF/> */}
+           
+            {/* <div className={style.socialIcons}>
               <a href="https://accounts.google.com/">
-                <FcGoogle className={style.google} 
-                // onClick={() => navigate('home')}/>
-                ></FcGoogle>
+                <FcGoogle className={style.google}
+                
+ onClick={() => navigate('home')}/>
+                </FcGoogle>
               </a>
               <FaApple className={style.facebook} 
-              // onClick={() => navigate('home')}/>
-            >
+               onClick={() => navigate('home')}/>
+            
               </FaApple>
+            </div> */}
             </div>
           </div>
         </main>
