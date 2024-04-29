@@ -7,8 +7,8 @@ import { CustomFooter } from "../../components/Footer/Footer";
 // import Button from "../../components/Button";
 
 import PrivacyPolicyCheckbox from "../../components/PrivacyPolicyCheckBox/data";
-import Button from "../../components/Button";
-import BackToTop from "./privacy";
+// import Button from "../../components/Education/Button";
+ import BackToTop from "./privacy";
 
 
 export const PrivacyPolicy = () => {
@@ -28,7 +28,7 @@ export const PrivacyPolicy = () => {
         </div>
         <div className={style.policy}>
           <PolicyAgreement />
-          <BackToTop/>
+           <BackToTop/>
           <br />
 <PrivacyPolicyCheckbox/>
 

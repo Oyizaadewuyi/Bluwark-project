@@ -9,9 +9,11 @@ export const CustomCheckbox = ({ label, checked, onChange }) => {
         checked={checked}
         onChange={onChange}
       />
+      <h1>h</h1>
       <span className={style.checkboxCustom}></span>
       {label}
     </label>
+    
   );
 };
 

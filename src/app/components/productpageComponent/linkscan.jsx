@@ -74,7 +74,7 @@ export const Scan = ({ title, description, buttonText, onSubmit }) => {
         <form onSubmit={handleSubmit} className={styles.emailform}>
           <input
             type="text"
-            placeholder="Link"
+            placeholder="Input Link"
             value={url}
             onChange={handleChange}
             required

@@ -45,11 +45,12 @@ p {
 .scanbtn {
     padding: 2px 5%;
    align-items: center;
-   background-color:transparent;
+   background-color:#0060B4;
    border: 1px solid #0050BE;
    border-radius: 25px;
-   height: 50px;
-   color: #0050BE;
+   height: 40px;
+   color: white;
    font-size: 16px;
-   margin-right: 20%;
+   margin-left: 10%;
+   margin-top: 5%
 }

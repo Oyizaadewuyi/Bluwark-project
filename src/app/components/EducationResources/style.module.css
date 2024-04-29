@@ -1,0 +1,36 @@
+.resource1Container {
+    width: 70%;
+    background-color: white;
+    border: 5px solid blue;
+    margin-top: 10%;
+    margin-left: 17%;
+    height: 330px;
+}
+
+.resource1Container p {
+    padding: 0% 5%;
+    text-align: start;
+    
+}
+.resource1Container h5 {
+    text-align: start;
+}
+
+
+.resourcesImg {
+    width: 500px;
+    height: 300px;
+    position: relative;
+    margin-left: 60%;
+    margin-top: -7%;
+}
+
+.resourceBtn {
+    border: 2px solid #3072C8;
+    color: #3072C8;
+    border-radius: 25px;
+    padding: 7px 25px;
+    margin-left: 10%;
+    margin-top: 3%;
+    
+}

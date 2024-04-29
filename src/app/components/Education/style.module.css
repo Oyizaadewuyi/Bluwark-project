@@ -1,0 +1,11 @@
+.Education {
+    background-image: url('/src/app/components/Assets/images/educationBg.png');
+    height: 100vh;
+}
+
+.educationhead {
+    text-align: center;
+    color: #0D265B;
+    padding-top: 12%;
+    font-weight: 700;
+}

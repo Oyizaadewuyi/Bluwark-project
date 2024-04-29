@@ -45,7 +45,7 @@ p {
     flex-direction: row;
 }
 input{
-    width: 300px;
+    width: 400px;
     color: #5E5E5E;
     border: 1px solid #5E5E5E;
 
@@ -68,4 +68,5 @@ input{
    font-size: 16px;
    margin-left: 5%;
    cursor: pointer;
+   margin-top: 5%;
     }
