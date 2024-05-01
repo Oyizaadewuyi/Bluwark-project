@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {quizData} from '../Quiz/data'
-import Button from '../../components/Button';
+import Button from '../../components/Button/index';
 
 import style from './style.module.css'
 
@@ -12,6 +12,7 @@ function Quiz() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [questionBackgroundColor, setQuestionBackgroundColor] = useState('#ffffff'); // Default color
+  const [selectedOption, setSelectedOption] = useState(null);
 
   // Function to check answer
   const checkAnswer = (selectedValue) => {
@@ -24,7 +25,21 @@ function Quiz() {
       setQuestionBackgroundColor('#ffcccc'); // Change background color to red for incorrect answer
     }
 
-    setCurrentQuestion(currentQuestion + 1);
+    // setCurrentQuestion(currentQuestion + 1);
+  };
+  const handleOptionChange = (e) => {
+    setSelectedOption(e.target.value);
+  };
+
+  const handleNextQuestion = () => {
+    if (selectedOption !== null) {
+      checkAnswer(selectedOption);
+      setCurrentQuestion(currentQuestion + 1);
+      setSelectedOption(null); // Clear selected option for the next question
+      setQuestionBackgroundColor('#ffffff'); // Reset background color
+    } else {
+      alert('Please select an option before proceeding.');
+    }
   };
 
   return (

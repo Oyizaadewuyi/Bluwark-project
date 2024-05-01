@@ -30,6 +30,7 @@
 }
 
 .fraudimagecontainer img{
+    position: relative;
     width: 500px;
     height: 300px;
     margin-top: 20%;

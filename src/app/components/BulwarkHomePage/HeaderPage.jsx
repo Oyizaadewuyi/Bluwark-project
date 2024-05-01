@@ -18,9 +18,7 @@ const HeaderPage = () => {
             <li>
               <Link to="/productpage">Product</Link>
             </li>
-            <li>
-              <Link to="/Features">Features</Link>
-            </li>
+            
             <li>
               <Link to="/Education">Education</Link>
             </li>
@@ -40,8 +38,10 @@ const HeaderPage = () => {
             <Link to="/SignIn">Log In</Link> {/* Use Link instead of <a> */}
           </li>
 
-                    {/* <li className='active'><a href="/login">Log In</a></li> */}
-                    <li className='Get'><a href="/signup">Get Started</a></li>
+                    
+                    <li className='Get'>
+                      <Link to="/signup" style={{color:"white"}}>Get Started</Link>
+                      </li>
                 </ul>
             
             </nav>

@@ -2,6 +2,7 @@
     background-image: url('/src/app/components/Assets/images/backgroundimg.png');;
     color: #FFFFFF;
     text-align: center;
+    background-color: #0050BE;
     
     margin: 0;
     padding: var(--app-padding);
@@ -17,12 +18,12 @@
     font-weight: bold;
     margin: 0;
     text-align: center;
-    color: #0D2658;
+    color: #0050BE;
    
 }
 .description {
     font-size: 1.5rem;
-    color: #2F1500;
+    color: black;
     margin-top: 2%;
 
 
@@ -31,12 +32,13 @@
 .herobutton {
     height: 5vh;
     padding: 0px 25px;
-    background-color: #0D2658;
-    border: 1px solid #0D2658;
+    background-color: #0050BE;
+    border: 1px solid #0050BE;
     border-radius: 20px;
     color: white;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 7%;
+    margin-left: -5%;
 }
 
 

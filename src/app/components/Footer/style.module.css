@@ -1,5 +1,5 @@
 .footer_container{
-    background-color: black;
+    background-color: #0D265B;
     color: #F4F3F6;
     display: flex;
     padding: 40px 10%;
@@ -31,12 +31,14 @@
     text-align: start;
     margin-right: 10%;
     color: white;
+    margin-top: 5%;
+    opacity: 5px;
 }
 
 .footerMenu h4 {
    font-size: 18px;
-   font-weight: 500; 
-   color: #F4F3F6;
+   font-weight: 700; 
+   color: white;
   
    }
 
@@ -61,7 +63,7 @@
 }
 
 .footerForm ::placeholder{
-    color: white;
+    color: grey;
     font-size: 10px;
 }
 

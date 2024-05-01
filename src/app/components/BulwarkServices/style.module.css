@@ -46,11 +46,16 @@
 
   
  .Services .list .item img {
-    display: flex;
-    justify-content: center;
-    width: 500px;
+    width: 100%; /* Set the width to 100% to make all images the same width */
+    max-width: 300px; /* Optionally, set a maximum width to prevent images from becoming too large */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure proper rendering */
+    margin-bottom: 10px;
+    /* display: flex;
+    justify-content: center; */
+    /* width: 500px;
     height: 400px;
-    margin-top: -12%;
+    margin-top: 10%; */
     /* margin-top: -20%; */
     } 
 
