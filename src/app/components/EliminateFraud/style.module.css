@@ -1,20 +1,21 @@
 .fraudtextcontainer{
     background-color: #ffff;
-    width: 800px;
+    width: 700px;
     height: min-content;
     padding: 20px;
+    margin-top: 5%;
 
     position: relative;
     left: 390px;
     top: 70px;
 }
 .fraudtextcontainer{
-    font-size: 64px;
+    font-size: 54px;
    
 
 }
 .passage{
-    font-size: 24px;
+    font-size: 20px;
     text-align: left;
     padding: 25px 50px;
     
@@ -24,14 +25,27 @@
     top: 1340px;
     
 }
+.header {
+    font-size: 30px;
+}
+
+.fraudimagecontainer img{
+    width: 500px;
+    height: 300px;
+    margin-top: 25%;
+    margin-left: 30%;
+}
+
 .btn{
     /* right: 1000px; */
     display: flex;
     align-items: center;
     justify-content: center;
     width: 11em;
-
+    background-color: transparent;
+color: #3072C8;
+border: 2px solid #3072C8;
     position: relative;
-    left: 540px;
+    left: 500px;
     
 }

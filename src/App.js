@@ -13,7 +13,7 @@ import Quiz from "./app/pages/Quiz/index";
 
 
 import {BulwarkAboutUs} from './app/pages/BulwarkAboutUs';
-import ProductPage from "./app/pages/ProductPage";
+import {ProductPage} from "./app/pages/ProductPage";
 import { BulwarkEducation } from "./app/pages/BulwarkEducation";
 
 
@@ -32,6 +32,7 @@ import { BulwarkEducation } from "./app/pages/BulwarkEducation";
 					<Route path="ForgotPassword" element={<ForgotPassword />} />
 					<Route path="privacypolicy" element={<PrivacyPolicy />} />
 					<Route path="productpage" element={<ProductPage />} />
+
 					<Route path="Education" element={<BulwarkEducation />} />
 					<Route path="bulwarkAboutUs/" element={<BulwarkAboutUs />} />
           <Route path="quiz/" element={<Quiz />} />

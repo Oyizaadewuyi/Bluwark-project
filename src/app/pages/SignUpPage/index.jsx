@@ -11,7 +11,7 @@ import { FcGoogle } from "react-icons/fc";
 import { FaXTwitter } from 'react-icons/fa6';
 import { FaFacebookF } from 'react-icons/fa';
 import Image2 from "../../components/Assets/images/SignupImage.png";
-import CustomButton from "../../components/Button";
+import CustomButton from "../../components/Button/index";
 
 
 
@@ -32,7 +32,7 @@ export const SignUp = () => {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
   const [signedUp, setSignedUp] = useState(false); // State for redirect
-  // const [loading, setLoading] = useState(false);
+  //  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value, } = e.target;
@@ -178,9 +178,19 @@ export const SignUp = () => {
               <label htmlFor="checkboxs"> I agree to all the Terms and Privacy Policies</label>
             </div>
 
-            <CustomButton type="submit" className={style.signupBtn} disabled={loading}>
+            <CustomButton 
+                    className={style.signupBtn} 
+                    onClick={handleSubmit}
+                    disabled={loading}
+                    >
+                                
+            {loading ? 'Signing up...' : 'Create Account'}
+            </CustomButton>
+      
+
+            {/* <CustomButton type="submit" className={style.signupBtn} disabled={loading}>
   {loading ? 'Signing Up...' : 'Create Account'}
-</CustomButton>
+</CustomButton> */}
 
              
           </form> 

@@ -1,34 +1,23 @@
-import React from "react";
-import EradicateScam from "../../components/EradicateScam";
-import EliminateFraud from "../../components/EliminateFraud";
-import HeaderPage from "../../components/BulwarkHomePage/HeaderPage";
-import { Scan } from "../../components/productpageComponent/linkscan";
-import ScamChecker from "../../components/productpageComponent/scanChecker";
-import { CustomFooter } from "../../components/Footer/Footer";
+import React from 'react'
+import style from './style.module.css'
+import HeaderPage from '../../components/BulwarkHomePage/HeaderPage'
+import { BulwarkProductPage } from '../../components/BulwarkProductPage/Product'
+import { Demo } from '../../components/ProductPageDemo/Demo'
+import EliminateFraud from '../../components/EliminateFraud'
 
-
-const ProductPage = () => {
+export const ProductPage = () => {
   return (
-    
-      
-      <div className="bg-[E0E0FD] flex flex-col justify-center py-12 px-20">
-      <HeaderPage />
-        <EradicateScam />
-        <EliminateFraud />
-        {/* <CustomFooter/> */}
-       <ScamChecker/>
+    <main className={style.ProductContainer}>
+        <HeaderPage/>
+        <BulwarkProductPage/>
+        <Demo/>
+        <EliminateFraud/>
+        
 
-       <CustomFooter/>
-       
-       
-       </div> 
-     
+    </main>
     
-    
-    
-  );
-};
+  )
+}
 
-export default ProductPage;
 
 

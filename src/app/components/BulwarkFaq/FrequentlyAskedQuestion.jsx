@@ -5,6 +5,7 @@ import React, { useState } from 'react';
 
 export const FrequentlyAskedQuestion = () => {
   const headings = [
+
     { title: "How do i update Bulwark My Account Email Address?", steps: [
       "Log in to your McAfee account",
       "At the top of your My Account page, select Account, and then click My Profile",
@@ -32,6 +33,7 @@ export const FrequentlyAskedQuestion = () => {
 
   return (
     <div className={styles.FaqContainer}>
+      <h2 className={styles.faqHead}>FAQ</h2>
     <div className={styles.heading} onClick={collapseSteps}>
       {headings.map((heading, index) => (
         <div key={index} className="section" onClick={(e) => e.stopPropagation()}>

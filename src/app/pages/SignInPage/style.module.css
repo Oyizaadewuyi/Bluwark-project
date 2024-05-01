@@ -144,5 +144,10 @@ justify-content: end;
     height: 500px;
 }
 
+.error {
+    color: red;
+    font-size: larger;
+   }
+
 
    

@@ -9,10 +9,18 @@
  }
  .heading  {
     margin-bottom: 10px;
+    margin-top: 5%;
     
      
          
     
+}
+
+.faqHead {
+    color: #0D265B;
+    text-align: center;
+    margin-top: -5%;
+    font-size: 30px;
 }
  h3 {
       display: flex;

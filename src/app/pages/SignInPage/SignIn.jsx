@@ -7,11 +7,12 @@ import { FcGoogle } from "react-icons/fc";
 import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaApple } from "react-icons/fa";
-import CustomButton from "../../components/Button";
+import CustomButton from "../../components/Button/index";
  import { Link } from "react-router-dom";
 import Image2 from "../../components/Assets/images/image 2.png";
 import { CustomInputField } from "../../components/Inputfield/InputField";
 import { useNavigate } from 'react-router-dom';
+import Button from '../../components/Button/index'
 
 
 const SignIn = () => {
@@ -20,6 +21,8 @@ const SignIn = () => {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
+
 
 
  const handleLogin = async (e) => {
@@ -59,6 +62,9 @@ const SignIn = () => {
     
   return (
     <div className={style.background}>
+
+{error && <div className={style.error}>{error}</div>} {/* Render error message */}
+
       <div className={style.logo_container}>
         {/* Your logo or logo icon component goes here */}
       </div>
@@ -89,6 +95,13 @@ const SignIn = () => {
                 onChange={(e)=> setPassword(e.target.value)} required/>
 
 
+{/* <button
+                type="button"
+                onClick={() => setShowPassword(!showPassword)}
+              >
+                {showPassword ? "Hide" : "Show"} Password
+              </button> */}
+
           <span className={style.forgot}>
             <a
               href="#/"
@@ -98,16 +111,21 @@ const SignIn = () => {
               <Link to={"/forgotpassword"}> Forgot password? </Link>
             </a>
           </span>
+
+          
           
 
-          <CustomButton 
+           <CustomButton 
                     className={style.loginBtn} 
                     onClick={handleLogin}
                     disabled={loading}
                     >
-                    Login
+                                
+            {loading ? 'Logging in...' : 'Login'}
+      
+                    {/* Login */}
                 </CustomButton>
-                
+                 
                 
               
             </form>
