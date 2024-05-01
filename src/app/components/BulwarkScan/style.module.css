@@ -4,7 +4,7 @@
     border-radius: 15px;
     margin-top: 10%;
     width: 65%;
-    height: 35vh;
+    height: 37vh;
     display: flex;
     justify-content: center;
     
@@ -15,13 +15,15 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 10px 15%; 
+    padding: 0px 15%; 
+    margin-top: -5%;
   } 
   
   .emailform input {
   
   width: 300px;
   align-items: flex-start;
+  
 
   }
 h5 {

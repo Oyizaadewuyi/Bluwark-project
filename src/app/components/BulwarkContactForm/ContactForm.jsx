@@ -35,11 +35,11 @@ export const ContactForm = () => {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <h2>Contact Us</h2>
+        <h2 className={styles.ContactUs}>Contact Us</h2>
         <form onSubmit={handleSubmit}className={styles.contactFrm}>
           <div className="form-group">
             <label htmlFor="name">Full Name</label>
-            <br/>
+            
             <input
               type="text"
               id="name"
@@ -47,6 +47,7 @@ export const ContactForm = () => {
               value={formData.name}
               onChange={handleChange}
               required
+              className={styles.inputField}
             />
           </div>
           <div className="form-group">
@@ -59,6 +60,7 @@ export const ContactForm = () => {
               value={formData.email}
               onChange={handleChange}
               required
+              className={styles.inputField}
             />
           </div>
           <div className="form-group">
@@ -72,13 +74,29 @@ export const ContactForm = () => {
               required
             />
           </div>
-          <button className={styles.contactbtn}type="submit">Submit</button>
+          
         </form>
       </div>
        <div className={styles.contactimg}> 
         <img className={styles.picture} src={contactimg} alt="Contact" />
       </div>
-     </div>
+      <div className={styles.Terms}>
+      <label className={styles.checkboxLabel}>
+    <input type="checkbox" name="agreeToTerms" id="terms" required className={styles.checkbox} />
+    <span className={styles.customCheckbox}></span>
+       I understand and agree that my personal data will be collected and processed according<br/>to the Privacy policies and unconditionally agree and accept the Terms of use</label>
+       </div>
+    
+             <label className={styles.checkboxLabel}>
+    <input type="checkbox" name="agreeToTerms" id="terms" required className={styles.checkbox} />
+    <span className={styles.customCheckbox}></span>Please send me information about new products,price changes,and special offers from Bulwark.<br/>I am aware that my consent could be revoked by clicking the unsubscribe link in any email received from Bulwark.</label>
+    <button className={styles.contactbtn}type="submit">Submit</button>
+    <br/>
+    <br/>
+    <br/>
+    <br/> 
+      </div>
+      
   );
 }
 

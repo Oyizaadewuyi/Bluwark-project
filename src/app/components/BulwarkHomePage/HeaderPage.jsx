@@ -31,7 +31,7 @@ const HeaderPage = () => {
               <Link to="/quiz">Quiz</Link>
             </li>
             <li>
-              <Link to="/bulwarkAboutUs">About us</Link>
+              <Link to="/bulwarkAboutUs">Contact us</Link>
             </li>
           </ul>
 
