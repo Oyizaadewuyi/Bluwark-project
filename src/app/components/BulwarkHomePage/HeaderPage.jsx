@@ -18,16 +18,16 @@ const HeaderPage = () => {
             <li>
               <Link to="/productpage">Product</Link>
             </li>
-            
-            <li>
-              <Link to="/Education">Education</Link>
-            </li>
             <li>
               <Link to="/privacypolicy">Privacy Policy</Link>
             </li>
             <li>
-              <Link to="/quiz">Quiz</Link>
+              <Link to="/Education">Education</Link>
             </li>
+            
+            {/* <li>
+              <Link to="/quiz">Quiz</Link>
+            </li> */}
             <li>
               <Link to="/bulwarkAboutUs">Contact us</Link>
             </li>
