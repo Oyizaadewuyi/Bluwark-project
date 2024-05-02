@@ -11,12 +11,13 @@ require("dotenv").config();
 const app = express();
 
 // adding cors
-const corsOptions = {
-	credentials: true,
-	origin: ["http://localhost:3000","http://localhost:3001", "*"], 
-};
+// const corsOptions = {
+// 	credentials: true,
+// 	origin: ["http://localhost:3000","http://localhost:3001", "*"], 
+// };
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
+app.use(cors());
 
 // using express for json
 app.use(express.json());
